@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html><head><meta name="robots" content="noindex,nofollow"><script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"../assets/ba80f3cc.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"../assets/32efd485.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../assets/08b8500f.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FGN Instalaciones — Energía solar de autoconsumo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+
+/* cyrillic */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../assets/bf0935d1.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/bf0935d1.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/bf0935d1.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* symbols2 */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/255af1ae.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* symbols2 */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/255af1ae.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #131318; color: #ededf2; font-family: "Geist", ui-sans-serif, system-ui, sans-serif; font-weight: 300; font-size: 17px; line-height: 1.62; letter-spacing: -0.006em; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: clip; }
+  h1, h2, h3, h4 { margin: 0; font-weight: 400; text-wrap: balance; }
+  p { margin: 0; text-wrap: pretty; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: #ff6a2b; }
+  button { font: inherit; color: inherit; }
+  img, svg, canvas { display: block; max-width: 100%; }
+  ul, ol, dl, dd { margin: 0; padding: 0; list-style: none; }
+  ::selection { background: #ff6a2b; color: #131318; }
+  :focus-visible { outline: 2px solid #ff6a2b; outline-offset: 3px; border-radius: 2px; }
+  input[type="range"] { -webkit-appearance: none; appearance: none; background: transparent; cursor: grab; }
+  input[type="range"]:active { cursor: grabbing; }
+  input[type="range"]::-webkit-slider-runnable-track { height: 32px; background: transparent; border: 0; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; box-sizing: border-box; width: 32px; height: 32px; margin-top: 0; border-radius: 999px; background: #131318; border: 9px solid #f2f0ec; box-shadow: 0 0 0 1px #131318, 0 2px 8px -2px rgba(19,19,24,0.45); transition: border-width 160ms cubic-bezier(.16,1,.3,1); }
+  input[type="range"]:active::-webkit-slider-thumb { border-width: 7px; }
+  input[type="range"]::-moz-range-track { height: 32px; background: transparent; border: 0; }
+  input[type="range"]::-moz-range-thumb { box-sizing: border-box; width: 32px; height: 32px; border-radius: 999px; background: #131318; border: 9px solid #f2f0ec; box-shadow: 0 0 0 1px #131318; }
+  input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 1px #131318, 0 0 0 4px #ff6a2b; }
+  input[type="range"]:focus-visible { outline: none; }
+  @keyframes mrBreathe { 0%, 100% { opacity: 0.34; transform: translate3d(0, 0, 0) scale(1); } 50% { opacity: 0.62; transform: translate3d(2%, -1.5%, 0) scale(1.14); } }
+  @keyframes mrCurtainLine { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes mrFocusPulse { 0%, 100% { opacity: 0.55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.12); } }
+  @keyframes mrMarquee { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+  @keyframes mrScrollCue { 0% { transform: translateY(-100%); } 60%, 100% { transform: translateY(320%); } }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+</style>
+
+</helmet>
+
+<div style="background:#131318;position:relative">
+
+  <a href="#main" style="position:absolute;left:-9999px;top:0;z-index:100">Saltar al contenido</a>
+
+  <!-- Cortina de marca: un compás antes del héroe, no un preloader falso -->
+  <div data-curtain="" aria-hidden="true" style="position:fixed;inset:0;z-index:90;display:flex;align-items:center;justify-content:center;background:#131318;transition:opacity 620ms cubic-bezier(.4,0,.2,1),visibility 620ms">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:24px">
+      <svg sc-camel-view-box="0 0 28 28" fill="none" aria-hidden="true" style="width:34px;height:34px;color:#ededf2">
+        <path d="M2 21.5C2 14.596 7.373 9 14 9s12 5.596 12 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="square" opacity="0.55"></path>
+        <path d="M2 25.4h24" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path>
+        <circle cx="14" cy="8.2" r="3.4" fill="#ff6a2b"></circle>
+        <path d="M14 0v3.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path>
+      </svg>
+      <span aria-hidden="true" style="display:block;width:120px;height:1px;background:#3a3a46;overflow:hidden"><span data-curtain-line="" style="display:block;height:1px;width:100%;transform-origin:left;background:#ff6a2b;animation:mrCurtainLine 900ms cubic-bezier(.65,0,.35,1) forwards"></span></span>
+    </div>
+  </div>
+
+  <!-- Raíl de progreso: índice de sección y recorrido leído -->
+  <div data-rail="" aria-hidden="true" style="position:fixed;right:clamp(12px,2vw,28px);top:50%;z-index:40;display:none;flex-direction:column;align-items:center;gap:16px;transform:translateY(-50%);opacity:0;transition:opacity 620ms cubic-bezier(.4,0,.2,1)">
+    <span data-rail-index="" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ededf2;font-variant-numeric:tabular-nums">01</span>
+    <span style="position:relative;display:block;width:1px;height:132px;background:#3a3a46"><span data-rail-fill="" style="position:absolute;inset-inline:0;top:0;height:0%;background:#ff6a2b"></span></span>
+    <span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#83838f;font-variant-numeric:tabular-nums">12</span>
+  </div>
+
+  <!-- ============================ NAV ============================ -->
+  <header data-nav="" style="position:fixed;inset-inline:0;top:0;z-index:50;padding-top:0;transition:padding-top 720ms cubic-bezier(.16,1,.3,1)">
+    <div data-nav-shell="" style="display:flex;align-items:center;justify-content:space-between;gap:24px;margin-inline:auto;max-width:1440px;padding:20px clamp(1.25rem,4vw,2.5rem);border:1px solid transparent;border-radius:999px;background:transparent;transition:max-width 720ms cubic-bezier(.16,1,.3,1),padding 720ms cubic-bezier(.16,1,.3,1),background-color 720ms cubic-bezier(.16,1,.3,1),border-color 720ms cubic-bezier(.16,1,.3,1),box-shadow 720ms cubic-bezier(.16,1,.3,1)">
+      <a href="#top" style="display:inline-flex;align-items:center;gap:10px;padding:4px 8px 4px 0" aria-label="FGN Instalaciones — inicio">
+        <svg sc-camel-view-box="0 0 28 28" fill="none" aria-hidden="true" style="width:24px;height:24px;flex:none;color:#ededf2">
+          <path d="M2 21.5C2 14.596 7.373 9 14 9s12 5.596 12 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="square" opacity="0.55"></path>
+          <path d="M2 25.4h24" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path>
+          <circle cx="14" cy="8.2" r="3.4" fill="#ff6a2b"></circle>
+          <path d="M14 0v3.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path>
+        </svg>
+        <span style="font-size:15px;font-weight:500;letter-spacing:-0.03em;text-transform:uppercase">FGN</span>
+      </a>
+
+      <nav aria-label="Principal" style="display:none" data-nav-links="">
+        <ul style="display:flex;align-items:center;gap:2px">
+          <li data-menu-host="" style="position:relative">
+            <a href="#solucion" data-menu-trigger="" aria-expanded="false" style="display:inline-flex;height:36px;align-items:center;padding:0 14px;border-radius:999px;font-size:14px;letter-spacing:-0.01em;color:#9c9ca8;transition:color 180ms" style-hover="color:#ededf2">Soluciones</a>
+            <div data-menu-panel="" style="position:absolute;top:100%;left:50%;width:22rem;transform:translateX(-50%);padding-top:12px;opacity:0;visibility:hidden;transition:opacity 180ms cubic-bezier(.4,0,.2,1)">
+              <div style="overflow:hidden;border-radius:12px;border:1px solid rgba(255,255,255,0.08);background:rgba(26,26,33,0.95);padding:8px;box-shadow:0 30px 80px -30px rgba(0,0,0,1);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)">
+                <a href="#solucion" style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;border-radius:8px;padding:14px 16px;transition:background-color 180ms" style-hover="background:rgba(255,255,255,0.05);color:inherit"><span><span style="display:block;font-size:15px;color:#ededf2">Autoconsumo</span><span style="margin-top:2px;display:block;font-size:13px;color:#83838f">Produce la energía que consumes.</span></span><svg sc-camel-view-box="0 0 16 16" fill="none" aria-hidden="true" style="margin-top:4px;width:16px;height:16px;color:#83838f"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg></a>
+                <a href="#tecnologia" style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;border-radius:8px;padding:14px 16px;transition:background-color 180ms" style-hover="background:rgba(255,255,255,0.05);color:inherit"><span><span style="display:block;font-size:15px;color:#ededf2">Baterías</span><span style="margin-top:2px;display:block;font-size:13px;color:#83838f">Guarda el sol para la noche.</span></span><svg sc-camel-view-box="0 0 16 16" fill="none" aria-hidden="true" style="margin-top:4px;width:16px;height:16px;color:#83838f"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg></a>
+                <a href="#contacto" style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;border-radius:8px;padding:14px 16px;transition:background-color 180ms" style-hover="background:rgba(255,255,255,0.05);color:inherit"><span><span style="display:block;font-size:15px;color:#ededf2">Empresas</span><span style="margin-top:2px;display:block;font-size:13px;color:#83838f">Reduce el coste operativo de tu actividad.</span></span><svg sc-camel-view-box="0 0 16 16" fill="none" aria-hidden="true" style="margin-top:4px;width:16px;height:16px;color:#83838f"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg></a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#solucion" style="display:inline-flex;height:36px;align-items:center;padding:0 14px;border-radius:999px;font-size:14px;letter-spacing:-0.01em;color:#9c9ca8;transition:color 180ms" style-hover="color:#ededf2">Cómo funciona</a></li>
+          <li><a href="#proyectos" style="display:inline-flex;height:36px;align-items:center;padding:0 14px;border-radius:999px;font-size:14px;letter-spacing:-0.01em;color:#9c9ca8;transition:color 180ms" style-hover="color:#ededf2">Proyectos</a></li>
+          <li><a href="#propuesta" style="display:inline-flex;height:36px;align-items:center;padding:0 14px;border-radius:999px;font-size:14px;letter-spacing:-0.01em;color:#9c9ca8;transition:color 180ms" style-hover="color:#ededf2">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:8px">
+        <a href="#contacto" data-nav-quiet="" style="display:none;align-items:center;font-size:14px;color:#9c9ca8;transition:color 180ms" style-hover="color:#ededf2">Contacto</a>
+        <a href="#calculadora" data-nav-cta="" style="display:none;height:40px;align-items:center;gap:8px;padding:0 20px;border-radius:999px;background:#ff6a2b;color:#131318;font-size:14px;font-weight:500;letter-spacing:-0.01em;white-space:nowrap;transition:background-color 180ms cubic-bezier(.4,0,.2,1),box-shadow 180ms cubic-bezier(.4,0,.2,1)" style-hover="background:#ffa87e;box-shadow:0 8px 30px -8px rgba(255,106,43,0.55);color:#131318">Calcula tu ahorro</a>
+        <button type="button" data-drawer-open="" aria-label="Abrir menú" aria-expanded="false" style="display:flex;height:40px;width:40px;align-items:center;justify-content:center;border-radius:999px;border:1px solid #3a3a46;background:transparent;color:#ededf2;cursor:pointer;transition:border-color 180ms" style-hover="border-color:#ededf2"><svg sc-camel-view-box="0 0 20 20" fill="none" aria-hidden="true" style="width:16px;height:16px"><path d="M2 6h16M2 14h16" stroke="currentColor" stroke-width="1.4"></path></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer móvil a pantalla completa -->
+  <div data-drawer="" aria-hidden="true" style="position:fixed;inset:0;z-index:60;opacity:0;visibility:hidden;transition:opacity 380ms cubic-bezier(.4,0,.2,1)">
+    <div data-drawer-backdrop="" style="position:absolute;inset:0;background:#131318"></div>
+    <div data-drawer-sheet="" style="position:relative;display:flex;height:100%;flex-direction:column;transform:translateY(-12px);transition:transform 720ms cubic-bezier(.16,1,.3,1)">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:20px clamp(1.25rem,4vw,2.5rem)">
+        <span style="display:inline-flex;align-items:center;gap:10px">
+          <svg sc-camel-view-box="0 0 28 28" fill="none" aria-hidden="true" style="width:24px;height:24px;color:#ededf2"><path d="M2 21.5C2 14.596 7.373 9 14 9s12 5.596 12 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="square" opacity="0.55"></path><path d="M2 25.4h24" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path><circle cx="14" cy="8.2" r="3.4" fill="#ff6a2b"></circle><path d="M14 0v3.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg>
+          <span style="font-size:15px;font-weight:500;letter-spacing:-0.03em;text-transform:uppercase">FGN</span>
+        </span>
+        <button type="button" data-drawer-close="" aria-label="Cerrar menú" style="display:flex;height:40px;width:40px;align-items:center;justify-content:center;border-radius:999px;border:1px solid #3a3a46;background:transparent;color:#ededf2;cursor:pointer"><svg sc-camel-view-box="0 0 20 20" fill="none" aria-hidden="true" style="width:16px;height:16px"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.4"></path></svg></button>
+      </div>
+
+      <nav aria-label="Menú móvil" style="flex:1;overflow-y:auto;padding:24px clamp(1.25rem,4vw,2.5rem) 0;scrollbar-width:thin">
+        <ul style="display:flex;flex-direction:column">
+          <li style="border-bottom:1px solid #26262f">
+            <a href="#solucion" data-drawer-item="" style="display:block;padding-block:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Soluciones</a>
+            <ul style="margin-top:-8px;padding-bottom:20px;padding-left:4px;display:flex;flex-direction:column;gap:4px">
+              <li><a href="#solucion" data-drawer-item="" style="display:flex;align-items:center;gap:8px;padding-block:8px;font-size:15px;color:#9c9ca8"><span aria-hidden="true" style="height:1px;width:16px;background:#3a3a46"></span>Autoconsumo</a></li>
+              <li><a href="#tecnologia" data-drawer-item="" style="display:flex;align-items:center;gap:8px;padding-block:8px;font-size:15px;color:#9c9ca8"><span aria-hidden="true" style="height:1px;width:16px;background:#3a3a46"></span>Baterías</a></li>
+              <li><a href="#contacto" data-drawer-item="" style="display:flex;align-items:center;gap:8px;padding-block:8px;font-size:15px;color:#9c9ca8"><span aria-hidden="true" style="height:1px;width:16px;background:#3a3a46"></span>Empresas</a></li>
+            </ul>
+          </li>
+          <li style="border-bottom:1px solid #26262f"><a href="#solucion" data-drawer-item="" style="display:block;padding-block:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Cómo funciona</a></li>
+          <li style="border-bottom:1px solid #26262f"><a href="#proyectos" data-drawer-item="" style="display:block;padding-block:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Proyectos</a></li>
+          <li style="border-bottom:1px solid #26262f"><a href="#propuesta" data-drawer-item="" style="display:block;padding-block:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Nosotros</a></li>
+          <li style="border-bottom:1px solid #26262f"><a href="#contacto" data-drawer-item="" style="display:block;padding-block:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div style="padding:24px clamp(1.25rem,4vw,2.5rem) max(1.5rem, env(safe-area-inset-bottom))">
+        <a href="#calculadora" data-drawer-item="" style="display:flex;height:3.25rem;width:100%;align-items:center;justify-content:center;gap:8px;border-radius:999px;background:#ff6a2b;color:#131318;font-size:16px;font-weight:500;letter-spacing:-0.01em">Calcula tu ahorro<svg sc-camel-view-box="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============================ 01 · HERO ============================ -->
+    <section id="top" style="position:relative;display:flex;min-height:100svh;flex-direction:column;justify-content:flex-end;overflow:hidden">
+      <div aria-hidden="true" style="position:absolute;inset:0;z-index:0">
+        <div data-parallax="0.10" style="position:absolute;inset:-8% 0 0 0">
+          <picture>
+            <source media="(max-width: 480px)" srcset="../assets/8f44eb7e.webp" type="image/webp">
+            <source srcset="../assets/73dfcc00.webp" type="image/webp">
+            <img src="../assets/73dfcc00.webp" alt="" fetchpriority="high" decoding="async" style="height:100%;width:100%;object-fit:cover;object-position:50% 50%">
+          </picture>
+        </div>
+        <div data-breathe="" style="position:absolute;left:86%;top:56%;width:52vw;height:52vw;max-width:680px;max-height:680px;transform:translate(-50%,-50%);border-radius:999px;background:radial-gradient(circle at 50% 50%, rgba(255,190,140,0.26) 0%, rgba(255,106,43,0.12) 40%, rgba(19,19,24,0) 72%);filter:blur(22px);animation:mrBreathe 11s cubic-bezier(.65,0,.35,1) infinite"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(100deg, rgba(19,19,24,0.84) 0%, rgba(19,19,24,0.64) 34%, rgba(19,19,24,0.26) 66%, rgba(19,19,24,0.36) 100%)"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(19,19,24,0.90) 0%, rgba(19,19,24,0.80) 32%, rgba(19,19,24,0.42) 58%, rgba(19,19,24,0.06) 76%, rgba(19,19,24,0) 88%)"></div>
+        <div style="position:absolute;inset-inline:0;top:0;height:260px;background:linear-gradient(to bottom, rgba(19,19,24,0.58) 0%, rgba(19,19,24,0) 100%)"></div>
+        <div style="position:absolute;inset-inline:0;bottom:0;height:46%;background:linear-gradient(to bottom, rgba(19,19,24,0) 0%, rgba(19,19,24,0.72) 62%, rgba(19,19,24,0.95) 100%)"></div>
+        <canvas data-particles="" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.5"></canvas>
+        <div style="position:absolute;inset:0;opacity:0.32;mix-blend-mode:overlay;background-image:url(&quot;../assets/ec0f0eb9.png&quot;);background-size:160px 160px;background-repeat:repeat"></div>
+      </div>
+
+      <div style="position:relative;z-index:1;width:100%;max-width:1520px;margin-inline:auto;padding:calc(72px + 5rem) clamp(1.25rem,4vw,2.5rem) 48px">
+        <div style="max-width:60rem">
+          <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#ededf2">
+            <span aria-hidden="true" style="display:inline-block;width:6px;height:6px;border-radius:999px;background:#ff6a2b"></span>
+            FGN Instalaciones · Energía solar de autoconsumo
+          </p>
+
+          <h1 data-headline="" style="margin-top:32px;font-size:clamp(3.25rem,1.6rem + 7.2vw,8.25rem);line-height:0.93;letter-spacing:-0.045em;font-weight:400">
+            <span style="display:inline-block;overflow:hidden;vertical-align:bottom"><span data-word="" style="display:inline-block">El</span></span>
+            <span style="display:inline-block;overflow:hidden;vertical-align:bottom"><span data-word="" style="display:inline-block">sol</span></span>
+            <span style="display:inline-block;overflow:hidden;vertical-align:bottom"><span data-word="" style="display:inline-block">ya</span></span>
+            <br>
+            <span style="display:inline-block;overflow:hidden;vertical-align:bottom"><span data-word="" style="display:inline-block">está</span></span>
+            <span style="display:inline-block;overflow:hidden;vertical-align:bottom"><span data-word="" style="display:inline-block">pagado.</span></span>
+          </h1>
+
+          <p data-reveal="up" data-delay="120" style="margin-top:36px;max-width:44ch;font-size:clamp(1.0625rem,0.98rem + 0.42vw,1.3125rem);line-height:1.52;letter-spacing:-0.012em;font-weight:300;color:#ededf2">
+            Diseñamos, instalamos y monitorizamos el sistema que convierte tu cubierta en tu propia fuente de energía. Ingeniería propia, obra certificada y un ahorro que puedes ver cada día.
+          </p>
+
+          <div data-reveal="up" data-delay="220" style="margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+            <a href="#calculadora" style="display:inline-flex;height:3.25rem;align-items:center;gap:8px;padding:0 32px;border-radius:999px;background:#ff6a2b;color:#131318;font-size:16px;font-weight:500;letter-spacing:-0.01em;transition:background-color 180ms cubic-bezier(.4,0,.2,1),box-shadow 180ms cubic-bezier(.4,0,.2,1)" style-hover="background:#ffa87e;box-shadow:0 8px 30px -8px rgba(255,106,43,0.55);color:#131318">
+              Calcula tu ahorro
+              <svg sc-camel-view-box="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg>
+            </a>
+            <a href="#solucion" style="display:inline-flex;height:3.25rem;align-items:center;padding:0 32px;border-radius:999px;border:1px solid #3a3a46;color:#ededf2;font-size:16px;font-weight:500;letter-spacing:-0.01em;transition:border-color 180ms,background-color 180ms" style-hover="border-color:#ededf2;background:rgba(255,255,255,0.04);color:#ededf2">Ver cómo funciona</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="position:relative;z-index:1;width:100%;max-width:1520px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div data-rule="" style="height:1px;background:#3a3a46"></div>
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px 40px;padding:28px 0">
+          <ul style="display:flex;flex-wrap:wrap;gap:16px 40px">
+            <li data-reveal="fade" data-delay="300" style="display:flex;align-items:baseline;gap:12px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">01</span><span style="font-size:13px;color:#83838f">Estudio técnico</span><span style="font-size:15px;color:#ededf2">Sin coste</span></li>
+            <li data-reveal="fade" data-delay="390" style="display:flex;align-items:baseline;gap:12px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">02</span><span style="font-size:13px;color:#83838f">Instalación</span><span style="font-size:15px;color:#ededf2">Llave en mano semanas</span></li>
+            <li data-reveal="fade" data-delay="480" style="display:flex;align-items:baseline;gap:12px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">03</span><span style="font-size:13px;color:#83838f">Monitorización</span><span style="font-size:15px;color:#ededf2">De por vida</span></li>
+          </ul>
+          <a href="#propuesta" style="display:inline-flex;align-items:center;gap:12px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#9c9ca8;transition:color 180ms" style-hover="color:#ededf2">
+            Desplaza
+            <span aria-hidden="true" style="position:relative;display:block;width:1px;height:32px;overflow:hidden;background:#3a3a46"><span style="position:absolute;inset-inline:0;top:0;height:12px;background:#ff6a2b;animation:mrScrollCue 2.4s cubic-bezier(.65,0,.35,1) infinite"></span></span>          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 02 · PROPUESTA ============================ -->
+    <section id="propuesta" aria-labelledby="propuesta-h" style="padding-block:clamp(5.5rem,10vw,11rem)">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:end">
+          <div style="grid-column:span 12;grid-column:1/span 12">
+            <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">
+              <span style="color:#ff6a2b;font-variant-numeric:tabular-nums">02</span>
+              <span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span>
+              <span>Por qué FGN Instalaciones</span>
+            </p>
+            <h2 id="propuesta-h" data-reveal="up" style="max-width:15ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">Instalación de placas solares hecha como un proyecto, no como una venta.</h2>
+          </div>
+        </div>
+        <p data-reveal="up" data-delay="90" style="margin-top:32px;max-width:42ch;color:#9c9ca8">El autoconsumo funciona cuando el sistema está bien calculado. Por eso trabajamos con datos de tu vivienda antes de hablar de precio.</p>
+
+        <ul style="margin-top:clamp(3.5rem,7vw,6rem);display:grid;gap:1px;background:#26262f;border-top:1px solid #26262f;border-bottom:1px solid #26262f;overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+          <li data-reveal="up" style="background:#131318;padding:40px 32px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">01</span><h3 style="margin-top:24px;max-width:16ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Ingeniería antes que catálogo</h3><p style="margin-top:16px;max-width:34ch;font-size:15px;line-height:1.55;color:#9c9ca8">Cada instalación parte de un estudio de sombras, consumo real y estructura. No vendemos kits: dimensionamos sistemas.</p></li>
+          <li data-reveal="up" data-delay="110" style="background:#131318;padding:40px 32px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">02</span><h3 style="margin-top:24px;max-width:16ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Una sola empresa, de principio a fin</h3><p style="margin-top:16px;max-width:34ch;font-size:15px;line-height:1.55;color:#9c9ca8">Diseño, tramitación, obra, legalización y postventa. Un interlocutor, un responsable, ningún subcontratista invisible.</p></li>
+          <li data-reveal="up" data-delay="220" style="background:#131318;padding:40px 32px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">03</span><h3 style="margin-top:24px;max-width:16ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">El ahorro, a la vista</h3><p style="margin-top:16px;max-width:34ch;font-size:15px;line-height:1.55;color:#9c9ca8">Monitorización desde el primer día. Producción, consumo y excedente en tiempo real, sin cuotas ni letra pequeña.</p></li>
+        </ul>
+
+        <dl style="margin-top:clamp(3rem,6vw,5rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px 32px">
+          <div data-reveal="up"><dd><span style="display:block;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em;font-variant-numeric:tabular-nums">140<span style="color:#ff6a2b">+</span></span><span style="margin-top:12px;display:block;max-width:18ch;font-size:13px;color:#83838f">Instalaciones ejecutadas</span></dd></div>
+          <div data-reveal="up" data-delay="80"><dd><span style="display:block;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em;font-variant-numeric:tabular-nums">9</span><span style="margin-top:12px;display:block;max-width:18ch;font-size:13px;color:#83838f">Años de experiencia</span></dd></div>
+          <div data-reveal="up" data-delay="160"><dd><span style="display:block;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em;font-variant-numeric:tabular-nums">1,9<span style="color:#ff6a2b"> MWp</span></span><span style="margin-top:12px;display:block;max-width:18ch;font-size:13px;color:#83838f">Potencia instalada</span></dd></div>
+          <div data-reveal="up" data-delay="240"><dd><span style="display:block;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em;font-variant-numeric:tabular-nums">97<span style="color:#ff6a2b">%</span></span><span style="margin-top:12px;display:block;max-width:18ch;font-size:13px;color:#83838f">Clientes que nos recomiendan</span></dd></div>
+        </dl>
+        <p style="margin-top:32px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Cifras de ejemplo · se sustituyen por los datos reales de la empresa</p>
+      </div>
+    </section>
+
+    <!-- ============================ 03 · PROBLEMA ============================ -->
+    <section aria-labelledby="problema-h" style="padding-block:clamp(5.5rem,10vw,11rem);border-top:1px solid #26262f">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px 24px">
+          <figure data-reveal="scale" style="margin:0">
+            <div style="position:relative;overflow:hidden;border-radius:12px;background:#1a1a21;aspect-ratio:4/5">
+              <img src="../assets/a1d66019.webp" alt="Infraestructura de red eléctrica recortada contra un cielo de hora azul" loading="lazy" decoding="async" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover">
+              <div aria-hidden="true" style="position:absolute;inset:0;background:rgba(19,19,24,0.06)"></div>
+            </div>
+            <figcaption style="margin-top:16px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Fig. 01 · Dependencia de red</figcaption>
+          </figure>
+
+          <div style="align-self:center">
+            <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span style="color:#ff6a2b">03</span><span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span><span>El problema</span></p>
+            <h2 id="problema-h" data-reveal="up" style="max-width:13ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">Tu factura sube. Tu tejado no hace nada.</h2>
+            <ul style="margin-top:48px;display:flex;flex-direction:column">
+              <li data-reveal="up" style="border-top:1px solid #26262f;padding-block:32px"><h3 style="max-width:22ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">El precio no lo decides tú</h3><p style="margin-top:12px;max-width:46ch;font-size:15px;line-height:1.55;color:#9c9ca8">El término de energía se revisa al margen de tu consumo. Cada subida entra directamente en tu factura.</p></li>
+              <li data-reveal="up" data-delay="100" style="border-top:1px solid #26262f;padding-block:32px"><h3 style="max-width:22ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Pagas por transportar lo que ya tienes</h3><p style="margin-top:12px;max-width:46ch;font-size:15px;line-height:1.55;color:#9c9ca8">Peajes, cargos e impuestos suman una parte notable del recibo antes de contar un solo kilovatio.</p></li>
+              <li data-reveal="up" data-delay="200" style="border-top:1px solid #26262f;border-bottom:1px solid #26262f;padding-block:32px"><h3 style="max-width:22ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Alquilas una energía que podrías producir</h3><p style="margin-top:12px;max-width:46ch;font-size:15px;line-height:1.55;color:#9c9ca8">Veinticinco años de facturas equivalen a comprar varias veces la instalación que nunca hiciste.</p></li>
+            </ul>
+            <p style="margin-top:40px;max-width:46ch;font-size:15px;line-height:1.55;color:#83838f">El término de energía encadena revisiones al alza año tras año, y cada una entra directamente en tu factura sin que puedas hacer nada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 04 · SOLUCIÓN ============================ -->
+    <section id="solucion" aria-labelledby="solucion-h" style="padding-block:clamp(5.5rem,10vw,11rem);border-top:1px solid #26262f">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="max-width:52rem">
+          <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span style="color:#ff6a2b">04</span><span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span><span>La solución</span></p>
+          <h2 id="solucion-h" data-reveal="up" style="max-width:13ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">Cuatro pasos. Ninguna intervención por tu parte.</h2>
+          <p data-reveal="up" data-delay="90" style="margin-top:32px;max-width:42ch;font-size:clamp(1.0625rem,0.98rem + 0.42vw,1.3125rem);line-height:1.52;letter-spacing:-0.012em;color:#9c9ca8">El autoconsumo no cambia cómo vives. Cambia de dónde viene la energía y quién la paga.</p>
+        </div>
+
+        <div style="margin-top:clamp(3.5rem,7vw,6rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px 40px;align-items:start">
+          <div data-reveal="scale" data-sticky-diagram="" style="position:sticky;top:calc(72px + 4rem);border-radius:12px;border:1px solid #26262f;background:rgba(26,26,33,0.6);padding:clamp(24px,4vw,40px)">
+            <svg data-draw="" sc-camel-view-box="0 0 640 400" fill="none" aria-hidden="true" style="width:100%;color:#ededf2">
+              <defs><marker id="mf-arrow" sc-camel-view-box="0 0 8 8" sc-camel-ref-x="6" sc-camel-ref-y="4" sc-camel-marker-width="6" sc-camel-marker-height="6" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#ff6a2b" stroke-width="1.2"></path></marker></defs>
+              <g stroke="currentColor" stroke-opacity="0.30" stroke-width="1">
+                <path d="M120 340V190l160-92 160 92v150"></path><path d="M120 340h320"></path><path d="M280 340v-70h58v70"></path><path d="M168 232h56v44h-56z"></path><path d="M392 232h56v44h-56z"></path>
+              </g>
+              <g>
+                <path d="M292 104 l30 17 l-14 8 l-30 -17 Z" fill="#ff6a2b" fill-opacity="0.18" stroke="#ff6a2b" stroke-opacity="0.6" stroke-width="1"></path>
+                <path d="M326 123.5 l30 17 l-14 8 l-30 -17 Z" fill="#ff6a2b" fill-opacity="0.18" stroke="#ff6a2b" stroke-opacity="0.6" stroke-width="1"></path>
+                <path d="M360 143 l30 17 l-14 8 l-30 -17 Z" fill="#ff6a2b" fill-opacity="0.18" stroke="#ff6a2b" stroke-opacity="0.6" stroke-width="1"></path>
+                <path d="M394 162.5 l30 17 l-14 8 l-30 -17 Z" fill="#ff6a2b" fill-opacity="0.18" stroke="#ff6a2b" stroke-opacity="0.6" stroke-width="1"></path>
+              </g>
+              <g stroke="#ff6a2b" stroke-width="1.2" stroke-opacity="0.85" marker-end="url(#mf-arrow)">
+                <path d="M330 150 C 380 190, 430 190, 452 232"></path><path d="M452 276 C 452 310, 380 316, 338 316"></path>
+              </g>
+              <g stroke="currentColor" stroke-opacity="0.30" stroke-width="1">
+                <path d="M528 200v140M516 340h24"></path><path d="M528 200l-22 -18M528 200l22 -18"></path><path d="M448 254h80" stroke-dasharray="4 5"></path>
+                <rect x="52" y="238" width="46" height="66" rx="4"></rect><path d="M98 268h70" stroke-dasharray="4 5"></path><path d="M66 254h18M66 264h18M66 274h10" stroke-opacity="0.5"></path>
+              </g>
+              <g font-family="'Geist Mono', monospace" font-size="10.5" letter-spacing="1.5" fill="currentColor" fill-opacity="0.5">
+                <text x="286" y="86">CAPTACIÓN</text><text x="392" y="224">INVERSOR</text><text x="286" y="366">CONSUMO</text><text x="500" y="192">RED</text><text x="46" y="228">BATERÍA</text>
+              </g>
+              <g data-focus="" style="opacity:0;transition:opacity 620ms cubic-bezier(.16,1,.3,1)">
+                <circle data-focus-ring="" cx="352" cy="130" r="46" fill="none" stroke="#ff6a2b" stroke-width="1.1" stroke-opacity="0.9" style="transition:cx 900ms cubic-bezier(.16,1,.3,1),cy 900ms cubic-bezier(.16,1,.3,1),r 900ms cubic-bezier(.16,1,.3,1)"></circle>
+                <circle data-focus-halo="" cx="352" cy="130" r="46" fill="#ff6a2b" fill-opacity="0.10" style="transition:cx 900ms cubic-bezier(.16,1,.3,1),cy 900ms cubic-bezier(.16,1,.3,1),r 900ms cubic-bezier(.16,1,.3,1)"></circle>
+              </g>
+            </svg>
+          </div>
+
+          <ol>
+            <li data-reveal="up" data-step="" data-cx="352" data-cy="130" data-r="58" style="border-top:1px solid #26262f;padding-block:28px"><div style="display:flex;align-items:baseline;gap:16px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b" data-step-letter="">A</span><h3 style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Captación</h3></div><p style="margin-top:12px;padding-left:32px;font-size:15px;line-height:1.55;color:#9c9ca8">Los módulos convierten la radiación en corriente continua. Producen todo el año, también con cielo cubierto.</p></li>
+            <li data-reveal="up" data-step="" data-cx="420" data-cy="254" data-r="46" data-delay="90" style="border-top:1px solid #26262f;padding-block:28px"><div style="display:flex;align-items:baseline;gap:16px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b" data-step-letter="">B</span><h3 style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Conversión</h3></div><p style="margin-top:12px;padding-left:32px;font-size:15px;line-height:1.55;color:#9c9ca8">El inversor la transforma en corriente alterna y la entrega al cuadro de tu vivienda.</p></li>
+            <li data-reveal="up" data-step="" data-cx="309" data-cy="305" data-r="52" data-delay="180" style="border-top:1px solid #26262f;padding-block:28px"><div style="display:flex;align-items:baseline;gap:16px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b" data-step-letter="">C</span><h3 style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Consumo</h3></div><p style="margin-top:12px;padding-left:32px;font-size:15px;line-height:1.55;color:#9c9ca8">Tus aparatos usan primero esa energía. Sólo lo que falta llega desde la red.</p></li>
+            <li data-reveal="up" data-step="" data-cx="520" data-cy="250" data-r="58" data-delay="270" style="border-top:1px solid #26262f;border-bottom:1px solid #26262f;padding-block:28px"><div style="display:flex;align-items:baseline;gap:16px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b" data-step-letter="">D</span><h3 style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Excedente</h3></div><p style="margin-top:12px;padding-left:32px;font-size:15px;line-height:1.55;color:#9c9ca8">Lo que no consumes se almacena en batería o se vierte a la red y se compensa en tu factura.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 05 · BENEFICIOS ============================ -->
+    <section aria-labelledby="beneficios-h" style="padding-block:clamp(5.5rem,10vw,11rem);border-top:1px solid #26262f">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px 40px;align-items:end">
+          <div>
+            <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span style="color:#ff6a2b">05</span><span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span><span>Beneficios</span></p>
+            <h2 id="beneficios-h" data-reveal="up" style="max-width:12ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">Lo que cambia el primer mes.</h2>
+          </div>
+          <div data-reveal="scale" style="border-radius:12px;border:1px solid #26262f;background:rgba(26,26,33,0.5);padding:24px">
+            <svg data-draw="" sc-camel-view-box="0 0 640 260" fill="none" aria-hidden="true" style="width:100%;color:#ededf2">
+              <g stroke="currentColor" stroke-opacity="0.14" stroke-width="1"><path d="M40 40h570"></path><path d="M40 82h570"></path><path d="M40 124h570"></path><path d="M40 166h570"></path><path d="M40 208h570"></path></g>
+              <path d="M40 226 C 140 226, 168 74, 262 50 C 356 26, 402 74, 470 150 C 520 206, 560 226, 610 226 L610 226 L40 226 Z" fill="#ff6a2b" fill-opacity="0.08"></path>
+              <path d="M40 226 C 140 226, 168 74, 262 50 C 356 26, 402 74, 470 150 C 520 206, 560 226, 610 226" stroke="#ff6a2b" stroke-width="1.6"></path>
+              <path d="M40 168 C 90 150, 120 120, 158 132 C 200 146, 236 190, 300 194 C 372 198, 420 176, 470 132 C 520 90, 560 106, 610 96" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.4" stroke-dasharray="5 5"></path>
+              <g font-family="'Geist Mono', monospace" font-size="10.5" letter-spacing="1.5" fill="currentColor" fill-opacity="0.45"><text x="40" y="250">06:00</text><text x="286" y="250">14:00</text><text x="566" y="250">22:00</text></g>
+            </svg>
+            <div style="margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;border-top:1px solid #26262f;padding-top:20px">
+              <span style="display:flex;align-items:center;gap:10px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span aria-hidden="true" style="height:1px;width:20px;background:#ff6a2b"></span>Producción solar</span>
+              <span style="display:flex;align-items:center;gap:10px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span aria-hidden="true" style="height:0;width:20px;border-top:1px dashed #9c9ca8"></span>Consumo del hogar</span>
+            </div>
+          </div>
+        </div>
+
+        <ul style="margin-top:clamp(3.5rem,7vw,6rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));border-top:1px solid #26262f">
+          <li data-reveal="up" style="border-bottom:1px solid #26262f;padding:44px 40px 44px 0"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">01</span><h3 style="margin-top:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Ahorro</h3><p style="margin-top:20px;max-width:38ch;font-size:15px;line-height:1.55;color:#9c9ca8">Cada kilovatio que produces es un kilovatio que no compras. El efecto es inmediato y se compone año tras año.</p><p style="margin-top:28px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Hasta un 70 % de tu factura anual</p></li>
+          <li data-reveal="up" data-delay="110" style="border-bottom:1px solid #26262f;border-left:1px solid #26262f;padding:44px 0 44px 40px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">02</span><h3 style="margin-top:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Independencia</h3><p style="margin-top:20px;max-width:38ch;font-size:15px;line-height:1.55;color:#9c9ca8">Con batería, la casa sigue funcionando cuando la red no. Menos exposición al precio y al corte.</p><p style="margin-top:28px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Autonomía de 8 horas con batería</p></li>
+          <li data-reveal="up" style="border-bottom:1px solid #26262f;padding:44px 40px 44px 0"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">03</span><h3 style="margin-top:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Valor del inmueble</h3><p style="margin-top:20px;max-width:38ch;font-size:15px;line-height:1.55;color:#9c9ca8">Una instalación bien ejecutada y legalizada mejora la calificación energética y el atractivo de venta.</p><p style="margin-top:28px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Certificación energética superior</p></li>
+          <li data-reveal="up" data-delay="110" style="border-bottom:1px solid #26262f;border-left:1px solid #26262f;padding:44px 0 44px 40px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">04</span><h3 style="margin-top:20px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Control</h3><p style="margin-top:20px;max-width:38ch;font-size:15px;line-height:1.55;color:#9c9ca8">Ves qué produces, qué consumes y qué viertes. Decides con datos, no con estimaciones.</p><p style="margin-top:28px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Datos en tiempo real, sin cuota</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ 06 · TECNOLOGÍA ============================ -->
+    <section id="tecnologia" aria-labelledby="tecnologia-h" style="padding-block:clamp(5.5rem,10vw,11rem);border-top:1px solid #26262f">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px 40px;align-items:end">
+          <div>
+            <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span style="color:#ff6a2b">06</span><span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span><span>Tecnología</span></p>
+            <h2 id="tecnologia-h" data-reveal="up" style="max-width:14ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">Cuatro componentes. Ninguna concesión.</h2>
+          </div>
+          <p data-reveal="up" style="max-width:38ch;color:#9c9ca8;justify-self:end">Trabajamos con fabricantes con servicio técnico real en España. Si no responden bien a una incidencia, no entran en nuestro catálogo.</p>
+        </div>
+
+        <ul style="margin-top:clamp(3rem,6vw,5rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+          <li data-reveal="up" data-tilt="" style="transform-style:preserve-3d;transition:transform 380ms cubic-bezier(.16,1,.3,1)"><article><div style="position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:12px;background:#1a1a21"><img src="../assets/2126febb.webp" alt="Detalle macro de la superficie de una célula fotovoltaica bajo luz rasante" loading="lazy" decoding="async" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover;transform:translateZ(0)"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top, rgba(19,19,24,0.85) 0%, rgba(19,19,24,0.10) 55%, rgba(19,19,24,0) 100%)"></div><span style="position:absolute;top:20px;left:20px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">01</span><h3 style="position:absolute;right:20px;bottom:20px;left:20px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Módulos</h3></div><p style="margin-top:20px;max-width:34ch;font-size:15px;line-height:1.55;color:#9c9ca8">Alta eficiencia y garantía de rendimiento a 30 años. Selección según orientación, sombras y estética de cubierta.</p></article></li>
+          <li data-reveal="up" data-delay="90" data-tilt="" style="transform-style:preserve-3d;transition:transform 380ms cubic-bezier(.16,1,.3,1)"><article><div style="position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:12px;background:#1a1a21"><img src="../assets/6140a2c6.webp" alt="Inversor solar instalado sobre pared de hormigón con luz lateral" loading="lazy" decoding="async" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top, rgba(19,19,24,0.85) 0%, rgba(19,19,24,0.10) 55%, rgba(19,19,24,0) 100%)"></div><span style="position:absolute;top:20px;left:20px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">02</span><h3 style="position:absolute;right:20px;bottom:20px;left:20px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Inversores</h3></div><p style="margin-top:20px;max-width:34ch;font-size:15px;line-height:1.55;color:#9c9ca8">Híbridos y preparados para batería desde el día uno. Optimización por módulo cuando la cubierta lo exige.</p></article></li>
+          <li data-reveal="up" data-delay="180" data-tilt="" style="transform-style:preserve-3d;transition:transform 380ms cubic-bezier(.16,1,.3,1)"><article><div style="position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:12px;background:#1a1a21"><img src="../assets/6284fb7e.webp" alt="Batería de almacenamiento mural en un cuarto técnico de hormigón, con el cableado peinado entrando por abajo" loading="lazy" decoding="async" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top, rgba(19,19,24,0.85) 0%, rgba(19,19,24,0.10) 55%, rgba(19,19,24,0) 100%)"></div><span style="position:absolute;top:20px;left:20px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">03</span><h3 style="position:absolute;right:20px;bottom:20px;left:20px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Baterías</h3></div><p style="margin-top:20px;max-width:34ch;font-size:15px;line-height:1.55;color:#9c9ca8">Litio-ferrofosfato, modular y ampliable. Dimensionada sobre tu curva real de consumo nocturno.</p></article></li>
+          <li data-reveal="up" data-delay="270" data-tilt="" style="transform-style:preserve-3d;transition:transform 380ms cubic-bezier(.16,1,.3,1)"><article><div style="position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:12px;background:#1a1a21"><img src="../assets/8807f06a.webp" alt="Pantalla mostrando la producción solar en tiempo real en un interior a oscuras" loading="lazy" decoding="async" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top, rgba(19,19,24,0.85) 0%, rgba(19,19,24,0.10) 55%, rgba(19,19,24,0) 100%)"></div><span style="position:absolute;top:20px;left:20px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">04</span><h3 style="position:absolute;right:20px;bottom:20px;left:20px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Monitorización</h3></div><p style="margin-top:20px;max-width:34ch;font-size:15px;line-height:1.55;color:#9c9ca8">Producción, consumo, excedente y estado del sistema. Alertas automáticas si algo se desvía.</p></article></li>
+        </ul>
+      </div>
+
+      <div style="margin-top:clamp(3rem,6vw,4.5rem)">
+        <div data-rule="" style="height:1px;background:#26262f"></div>
+        <div data-marquee="" style="display:flex;overflow:hidden;padding-block:26px;mask-image:linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);-webkit-mask-image:linear-gradient(to right, transparent, #000 8%, #000 92%, transparent)">
+          <div data-marquee-track="" style="display:flex;flex:none;align-items:center;gap:56px;padding-right:56px;animation:mrMarquee 42s linear infinite">
+            <span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f;white-space:nowrap">Fabricantes</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Módulos de alta eficiencia</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Inversores híbridos</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Baterías de litio LFP</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Monitorización en tiempo real</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Estructura y anclaje certificados</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Protecciones eléctricas</span>
+            <span aria-hidden="true" style="width:6px;height:6px;flex:none;border-radius:999px;background:#ff6a2b"></span>
+            <span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f;white-space:nowrap">Acreditaciones</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Empresa instaladora autorizada</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Personal cualificado propio</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Certificaciones de fabricante</span>
+            <span style="font-size:13px;color:#9c9ca8;white-space:nowrap">Seguro de responsabilidad civil</span>
+            <span aria-hidden="true" style="width:6px;height:6px;flex:none;border-radius:999px;background:#ff6a2b"></span>
+          </div>
+        </div>
+        <div data-rule="" style="height:1px;background:#26262f"></div>
+      </div>
+    </section>
+
+    <!-- ============================ 07 · CALCULADORA (papel) ============================ -->
+    <section id="calculadora" aria-labelledby="calc-h" style="padding-block:clamp(5.5rem,10vw,11rem);background:#f2f0ec;color:#131318">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px 40px;align-items:end">
+          <div>
+            <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#5f5c56"><span style="color:#131318">07</span><span aria-hidden="true" style="height:1px;width:24px;background:#d6d2ca"></span><span>Calculadora</span></p>
+            <h2 id="calc-h" data-reveal="up" style="max-width:13ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">Cuánto dejarías de pagar.</h2>
+          </div>
+          <p data-reveal="up" style="max-width:38ch;color:#5f5c56;justify-self:end">Cuatro datos y tienes un orden de magnitud. Ajusta la factura y verás cómo se mueve todo lo demás.</p>
+        </div>
+
+        <div style="margin-top:clamp(3rem,6vw,5rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px 24px;align-items:start">
+
+          <form data-reveal="up" aria-label="Estimación de ahorro">
+            <fieldset style="border:0;margin:0;padding:0 0 32px">
+              <legend style="position:absolute;left:-9999px">Dónde está la vivienda</legend>
+              <div style="margin-bottom:20px;display:flex;align-items:baseline;justify-content:space-between;gap:16px">
+                <span style="font-size:15px;color:#131318">Dónde está la vivienda</span>
+                <span style="max-width:24ch;text-align:right;font-size:13px;line-height:1.45;color:#5f5c56">Determina las horas de sol equivalentes al año</span>
+              </div>
+              <div data-calc-zone="" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+                <button type="button" data-zone="norte" data-yield="1150" aria-pressed="false" style="border-radius:8px;border:1px solid #d6d2ca;background:transparent;color:#131318;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Norte peninsular</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:#5f5c56">Galicia, Cornisa cantábrica</span></button>
+                <button type="button" data-zone="centro" data-yield="1400" aria-pressed="true" style="border-radius:8px;border:1px solid #131318;background:#131318;color:#f2f0ec;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Centro y noreste</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:rgba(242,240,236,0.65)">Madrid, Cataluña, Aragón</span></button>
+                <button type="button" data-zone="levante" data-yield="1550" aria-pressed="false" style="border-radius:8px;border:1px solid #d6d2ca;background:transparent;color:#131318;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Levante y Baleares</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:#5f5c56">Valencia, Murcia, Illes Balears</span></button>
+                <button type="button" data-zone="sur" data-yield="1680" aria-pressed="false" style="border-radius:8px;border:1px solid #d6d2ca;background:transparent;color:#131318;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Sur y Canarias</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:#5f5c56">Andalucía, Extremadura, Canarias</span></button>
+              </div>
+            </fieldset>
+
+            <fieldset style="border:0;border-top:1px solid #d6d2ca;margin:0;padding:32px 0">
+              <legend style="position:absolute;left:-9999px">Tipo de inmueble</legend>
+              <div style="margin-bottom:20px;display:flex;align-items:baseline;justify-content:space-between;gap:16px">
+                <span style="font-size:15px;color:#131318">Tipo de inmueble</span>
+                <span style="max-width:24ch;text-align:right;font-size:13px;line-height:1.45;color:#5f5c56">Acota la superficie útil de cubierta</span>
+              </div>
+              <div data-calc-prop="" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+                <button type="button" data-prop="unifamiliar" data-self="0.40" data-billmax="600" data-maxkwp="10" aria-pressed="true" style="border-radius:8px;border:1px solid #131318;background:#131318;color:#f2f0ec;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Vivienda unifamiliar</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:rgba(242,240,236,0.65)">Techo 10 kWp · consumo de tarde y noche</span></button>
+                <button type="button" data-prop="adosado" data-self="0.38" data-billmax="400" data-maxkwp="6" aria-pressed="false" style="border-radius:8px;border:1px solid #d6d2ca;background:transparent;color:#131318;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Adosado o pareado</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:#5f5c56">Techo 6 kWp · cubierta compartida</span></button>
+                <button type="button" data-prop="rustica" data-self="0.45" data-billmax="800" data-maxkwp="15" aria-pressed="false" style="border-radius:8px;border:1px solid #d6d2ca;background:transparent;color:#131318;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Casa rural o finca</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:#5f5c56">Techo 15 kWp · más cubierta disponible</span></button>
+                <button type="button" data-prop="negocio" data-self="0.62" data-billmax="3000" data-maxkwp="100" aria-pressed="false" style="border-radius:8px;border:1px solid #d6d2ca;background:transparent;color:#131318;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Negocio o nave</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:#5f5c56">Techo 100 kWp · consumo en horas de sol</span></button>
+              </div>
+            </fieldset>
+
+            <fieldset style="border:0;border-top:1px solid #d6d2ca;margin:0;padding:32px 0">
+              <legend style="position:absolute;left:-9999px">Factura mensual media</legend>
+              <div style="margin-bottom:20px;display:flex;align-items:baseline;justify-content:space-between;gap:16px">
+                <span style="font-size:15px;color:#131318">Factura mensual media</span>
+                <span style="max-width:24ch;text-align:right;font-size:13px;line-height:1.45;color:#5f5c56">El dato que mejor aproxima tu consumo real</span>
+              </div>
+              <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px">
+                <output data-out="bill" for="mr-bill" aria-live="polite" style="font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1;letter-spacing:-0.035em;font-variant-numeric:tabular-nums">120 €</output>
+                <span data-out="consumption" style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#5f5c56">≈ 6.000 kWh/año</span>
+              </div>
+              <div style="position:relative;margin-top:20px;height:32px">
+                <div aria-hidden="true" style="position:absolute;inset-inline:0;top:15px;height:2px;border-radius:999px;background:#d6d2ca"></div>
+                <div data-fill="" aria-hidden="true" style="position:absolute;left:0;top:15px;height:2px;width:16px;border-radius:999px;background:#ff6a2b"></div>
+                <input id="mr-bill" data-calc-bill="" type="range" min="40" max="600" step="5" value="120" style="position:absolute;inset:0;margin:0;width:100%;height:32px;background:transparent" aria-label="Factura mensual media en euros">
+              </div>
+              <div style="margin-top:8px;display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#5f5c56"><span>40 €</span><span data-out="billmax">600 €</span></div>
+            </fieldset>
+
+            <fieldset style="border:0;border-top:1px solid #d6d2ca;margin:0;padding:32px 0 0">
+              <legend style="position:absolute;left:-9999px">Almacenamiento</legend>
+              <div style="margin-bottom:20px;display:flex;align-items:baseline;justify-content:space-between;gap:16px">
+                <span style="font-size:15px;color:#131318">Almacenamiento</span>
+                <span style="max-width:24ch;text-align:right;font-size:13px;line-height:1.45;color:#5f5c56">Añade batería si consumes sobre todo de noche</span>
+              </div>
+              <div data-calc-batt="" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+                <button type="button" data-batt="0" aria-pressed="true" style="border-radius:8px;border:1px solid #131318;background:#131318;color:#f2f0ec;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Sin batería</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:rgba(242,240,236,0.65)">Autoconsumo directo</span></button>
+                <button type="button" data-batt="1" aria-pressed="false" style="border-radius:8px;border:1px solid #d6d2ca;background:transparent;color:#131318;padding:14px 16px;text-align:left;cursor:pointer;transition:background-color 180ms,border-color 180ms,color 180ms"><span style="display:block;font-size:14px;line-height:1.35">Con batería</span><span data-sub="" style="margin-top:4px;display:block;font-size:12px;line-height:1.35;color:#5f5c56">Mayor cobertura</span></button>
+              </div>
+            </fieldset>
+          </form>
+
+          <div data-reveal="up" data-delay="120" data-calc-panel="">
+            <div style="overflow:hidden;border-radius:20px;background:#131318;color:#ededf2">
+              <div style="border-bottom:1px solid #26262f;padding:28px clamp(24px,4vw,36px)">
+                <p style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Ahorro estimado · primer año</p>
+                <p data-out="saving" aria-live="polite" style="margin-top:16px;font-size:clamp(2.75rem,1.5rem + 5.4vw,6rem);line-height:1;letter-spacing:-0.04em;font-variant-numeric:tabular-nums">0 €</p>
+                <p style="margin-top:16px;font-size:15px;line-height:1.55;color:#9c9ca8">Cubrirías el <span data-out="coverage" style="color:#ff6a2b;font-variant-numeric:tabular-nums">0 %</span> de tu consumo anual con una instalación de <span data-out="kwp" style="color:#ededf2;font-variant-numeric:tabular-nums">0 kWp</span><span data-out="battnote"></span>.</p>
+              </div>
+
+              <dl style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-bottom:1px solid #26262f">
+                <div style="display:flex;flex-direction:column;justify-content:space-between;padding:24px clamp(24px,4vw,36px)"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Producción anual</dt><dd data-out="production" style="margin-top:12px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);letter-spacing:-0.02em;font-variant-numeric:tabular-nums">0 kWh</dd></div>
+                <div style="display:flex;flex-direction:column;justify-content:space-between;border-left:1px solid #26262f;padding:24px clamp(24px,4vw,36px)"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Inversión estimada</dt><dd data-out="investment" style="margin-top:12px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);letter-spacing:-0.02em;font-variant-numeric:tabular-nums">0 €</dd><dd data-out="pricekwp" style="margin-top:6px;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#83838f;font-variant-numeric:tabular-nums">0 €/kWp</dd></div>
+                <div style="display:flex;flex-direction:column;justify-content:space-between;border-top:1px solid #26262f;padding:24px clamp(24px,4vw,36px)"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Retorno</dt><dd data-out="payback" style="margin-top:12px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);letter-spacing:-0.02em;font-variant-numeric:tabular-nums">0 años</dd></div>
+                <div style="display:flex;flex-direction:column;justify-content:space-between;border-top:1px solid #26262f;border-left:1px solid #26262f;padding:24px clamp(24px,4vw,36px)"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">CO₂ evitado / año</dt><dd data-out="co2" style="margin-top:12px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);letter-spacing:-0.02em;font-variant-numeric:tabular-nums">0 kg</dd></div>
+              </dl>
+
+              <div style="padding:32px clamp(24px,4vw,36px)">
+                <p style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Coste de tu energía a 25 años</p>
+                <div style="margin-top:24px;display:flex;flex-direction:column;gap:16px">
+                  <div>
+                    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px"><span style="font-size:13px;color:#9c9ca8">Sin autoconsumo</span><span data-out="cost25" style="font-size:15px;font-variant-numeric:tabular-nums">0 €</span></div>
+                    <div style="margin-top:10px;height:8px;width:100%;overflow:hidden;border-radius:999px;background:#22222b"><div style="height:100%;width:100%;border-radius:999px;background:#3a3a46"></div></div>
+                  </div>
+                  <div>
+                    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px"><span style="font-size:13px;color:#9c9ca8">Con FGN Instalaciones</span><span data-out="withmeridia" style="font-size:15px;font-variant-numeric:tabular-nums">0 €</span></div>
+                    <div style="margin-top:10px;height:8px;width:100%;overflow:hidden;border-radius:999px;background:#22222b"><div data-bar="" style="height:100%;width:2%;border-radius:999px;background:#ff6a2b;transition:width 720ms cubic-bezier(.16,1,.3,1)"></div></div>
+                    <p data-out="invnote" style="margin-top:8px;font-size:13px;color:#83838f">incluye la inversión</p>
+                  </div>
+                </div>
+                <p style="margin-top:28px;border-top:1px solid #26262f;padding-top:24px;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);letter-spacing:-0.02em;font-variant-numeric:tabular-nums">Diferencia: <span data-out="diff" style="color:#ff6a2b">0 €</span></p>
+              </div>
+
+              <div style="border-top:1px solid #26262f;padding:28px clamp(24px,4vw,36px)">
+                <details>
+                  <summary style="cursor:pointer;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f;list-style:none">Supuestos del modelo</summary>
+                  <ul style="margin-top:20px;display:grid;gap:10px;font-size:13px;line-height:1.5;color:#83838f">
+                    <li>Energía de red 0,24 €/kWh; excedente compensado a 0,07 €/kWh.</li>
+                    <li>Potencia dimensionada para cubrir el consumo anual con un 10 % de margen, acotada por el techo de cubierta del inmueble.</li>
+                    <li>Precio por kWp decreciente con el tamaño, desde 1.450 €/kWp de referencia. Batería a 620 €/kWh.</li>
+                    <li>Autoconsumo directo según el perfil del inmueble, del 38 % de una cubierta compartida al 62 % de una nave. Con batería, hasta el 92 %.</li>
+                    <li>Horizonte de 25 años, energía al 3 % anual y degradación del módulo del 0,5 % anual.</li>
+                    <li>CO₂ evitado a 0,19 kg por kWh producido.</li>
+                  </ul>
+                </details>
+              </div>
+
+              <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid #26262f;padding:28px clamp(24px,4vw,36px)">
+                <p style="max-width:34ch;font-size:13px;line-height:1.45;color:#83838f">Estimación orientativa basada en supuestos medios. No constituye una oferta. El estudio técnico ajusta cada cifra a tu vivienda.</p>
+                <a href="#contacto" style="flex:none;display:inline-flex;height:2.75rem;align-items:center;gap:8px;padding:0 24px;border-radius:999px;background:#ff6a2b;color:#131318;font-size:15px;font-weight:500;letter-spacing:-0.01em;transition:background-color 180ms cubic-bezier(.4,0,.2,1),box-shadow 180ms cubic-bezier(.4,0,.2,1)" style-hover="background:#ffa87e;box-shadow:0 8px 30px -8px rgba(255,106,43,0.55);color:#131318">Estudio exacto<svg sc-camel-view-box="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div></section>
+
+    <!-- ============================ 08 · PROCESO ============================ -->
+    <section aria-labelledby="proceso-h" style="padding-block:clamp(5.5rem,10vw,11rem)">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="display:flex;flex-wrap:wrap;gap:64px 56px;align-items:flex-start">
+          <div style="flex:1 1 260px;max-width:360px;min-width:0">
+            <div style="position:sticky;top:calc(72px + 3rem)">
+              <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span style="color:#ff6a2b">08</span><span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span><span>El proceso</span></p>
+              <h2 id="proceso-h" data-reveal="up" style="max-width:10ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">De la idea a la primera factura.</h2>
+              <p data-reveal="up" data-delay="90" style="margin-top:32px;max-width:34ch;color:#9c9ca8">Cuatro fases, un responsable de proyecto y ninguna sorpresa entre la propuesta y la puesta en marcha.</p>
+              <a href="#contacto" style="margin-top:40px;display:inline-flex;height:2.75rem;align-items:center;gap:8px;padding:0 24px;border-radius:999px;border:1px solid #3a3a46;color:#ededf2;font-size:15px;font-weight:500;transition:border-color 180ms,background-color 180ms" style-hover="border-color:#ededf2;background:rgba(255,255,255,0.04);color:#ededf2">Solicitar estudio<svg sc-camel-view-box="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg></a>
+            </div>
+          </div>
+
+          <ol style="flex:3 1 420px;min-width:0">
+            <li data-reveal="up" style="border-top:1px solid #26262f;padding-block:clamp(2.5rem,5vw,4rem)"><div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">01</span><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Sin coste · 3 días</span></div><h3 style="margin-top:28px;max-width:16ch;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Estudiamos tu vivienda</h3><p style="margin-top:24px;max-width:52ch;color:#9c9ca8">Analizamos tu consumo horario, la orientación e inclinación de la cubierta y las sombras a lo largo del año. Con eso sabemos qué tiene sentido instalar y qué no.</p></li>
+            <li data-reveal="up" data-delay="60" style="border-top:1px solid #26262f;padding-block:clamp(2.5rem,5vw,4rem)"><div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">02</span><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Propuesta cerrada</span></div><h3 style="margin-top:28px;max-width:16ch;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Diseñamos tu instalación</h3><p style="margin-top:24px;max-width:52ch;color:#9c9ca8">Recibes el proyecto con potencia, distribución de módulos, producción estimada mes a mes, inversión y retorno. Un único documento, sin ambigüedades.</p></li>
+            <li data-reveal="up" data-delay="120" style="border-top:1px solid #26262f;padding-block:clamp(2.5rem,5vw,4rem)"><div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">03</span><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">2 semanas · Llave en mano</span></div><h3 style="margin-top:28px;max-width:16ch;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Instalamos y legalizamos</h3><p style="margin-top:24px;max-width:52ch;color:#9c9ca8">Obra ejecutada por equipo propio, con protecciones, estructura certificada y toda la tramitación administrativa incluida hasta la puesta en marcha.</p></li>
+            <li data-reveal="up" data-delay="180" style="border-top:1px solid #26262f;border-bottom:1px solid #26262f;padding-block:clamp(2.5rem,5vw,4rem)"><div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px"><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#ff6a2b">04</span><span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Postventa de por vida</span></div><h3 style="margin-top:28px;max-width:16ch;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Monitorizas y ahorras</h3><p style="margin-top:24px;max-width:52ch;color:#9c9ca8">Te entregamos el sistema funcionando y la app configurada. A partir de ahí, revisamos el rendimiento y respondemos en 24 h ante cualquier incidencia.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 09 · PROYECTOS ============================ -->
+    <section id="proyectos" aria-labelledby="proyectos-h" style="padding-block:clamp(5.5rem,10vw,11rem);border-top:1px solid #26262f">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px 40px;align-items:end">
+          <div>
+            <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span style="color:#ff6a2b">09</span><span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span><span>Proyectos</span></p>
+            <h2 id="proyectos-h" data-reveal="up" style="max-width:13ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">Instalaciones que ya están produciendo.</h2>
+          </div>
+        </div>
+
+        <div style="margin-top:clamp(3.5rem,7vw,6rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px 24px;align-items:start">
+          <article data-reveal="up" data-tilt="" style="transition:transform 380ms cubic-bezier(.16,1,.3,1)">
+            <div style="position:relative;overflow:hidden;border-radius:12px;background:#1a1a21;aspect-ratio:4/5"><img src="../assets/932bb592.webp" alt="Vivienda contemporánea a dos aguas al atardecer, con la cubierta fotovoltaica integrada y el sol tras el alero" loading="lazy" decoding="async" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover"></div>
+            <div style="margin-top:24px;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;border-top:1px solid #26262f;padding-top:20px">
+              <div><h3 style="max-width:24ch;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;letter-spacing:-0.028em">Cubierta inclinada sobre estructura de madera</h3><p style="margin-top:12px;max-width:44ch;font-size:15px;line-height:1.55;color:#9c9ca8">Integración a haces con la cubierta existente, sin perforar la teja. Estructura anclada a rastreles y cableado oculto en falso techo.</p></div>
+              <span style="flex:none;text-align:right;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">San Cristóbal de La Laguna<br>2024</span>
+            </div>
+            <dl style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px 32px"><div style="display:flex;align-items:baseline;gap:8px"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Potencia</dt><dd style="font-size:13px;font-variant-numeric:tabular-nums">8,4 kWp</dd></div><div style="display:flex;align-items:baseline;gap:8px"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Producción</dt><dd style="font-size:13px;font-variant-numeric:tabular-nums">12.400 kWh/año</dd></div><div style="display:flex;align-items:baseline;gap:8px"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Cobertura</dt><dd style="font-size:13px;font-variant-numeric:tabular-nums">72 %</dd></div></dl>
+          </article>
+
+          <div style="display:flex;flex-direction:column;gap:56px;padding-top:0">
+            <article data-reveal="up" data-delay="90" data-tilt="" style="transition:transform 380ms cubic-bezier(.16,1,.3,1)">
+              <div style="position:relative;overflow:hidden;border-radius:12px;background:#1a1a21;aspect-ratio:16/11"><img src="../assets/8ade85bd.webp" alt="Vista cenital de una cubierta plana cubierta por un campo de módulos solares" loading="lazy" decoding="async" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover"></div>
+              <div style="margin-top:24px;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;border-top:1px solid #26262f;padding-top:20px">
+                <div><h3 style="max-width:24ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Autoconsumo diurno en nave industrial</h3><p style="margin-top:12px;max-width:44ch;font-size:15px;line-height:1.55;color:#9c9ca8">Curva de consumo casi coincidente con la de producción: el caso donde el autoconsumo rinde más y antes.</p></div>
+                <span style="flex:none;text-align:right;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Polígono industrial<br>2025</span>
+              </div>
+            </article>
+            <article data-reveal="up" data-delay="180" data-tilt="" style="transition:transform 380ms cubic-bezier(.16,1,.3,1)">
+              <div style="position:relative;overflow:hidden;border-radius:12px;background:#1a1a21;aspect-ratio:16/11"><img src="../assets/5fcb963d.webp" alt="Fachada moderna en hora azul con luz interior encendida" loading="lazy" decoding="async" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover"></div>
+              <div style="margin-top:24px;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;border-top:1px solid #26262f;padding-top:20px">
+                <div><h3 style="max-width:24ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em">Adosado con almacenamiento</h3><p style="margin-top:12px;max-width:44ch;font-size:15px;line-height:1.55;color:#9c9ca8">Batería dimensionada sobre el consumo nocturno real de la familia. Autonomía en cortes de red para circuitos esenciales.</p></div>
+                <span style="flex:none;text-align:right;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">San Cristóbal de La Laguna<br>2024</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 10 · CLIENTES ============================ -->
+    <section aria-labelledby="testimonios-h" style="padding-block:clamp(5.5rem,10vw,11rem);border-top:1px solid #26262f">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span style="color:#ff6a2b">10</span><span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span><span>Clientes</span></p>
+        <h2 id="testimonios-h" style="position:absolute;left:-9999px">Lo que dicen nuestros clientes</h2>
+
+        <figure style="margin:0">
+          <blockquote style="margin:0">
+            <p data-reveal="up" style="max-width:19ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em"><span aria-hidden="true" style="color:#ff6a2b">“</span>Nos explicaron lo que no debíamos instalar antes que lo que sí. Eso fue exactamente lo que nos hizo decidirnos.</p>
+          </blockquote>
+          <figcaption data-reveal="fade" style="margin-top:40px;display:flex;flex-wrap:wrap;align-items:baseline;gap:16px"><span aria-hidden="true" style="height:1px;width:40px;background:#ff6a2b"></span><span style="font-size:15px">Cliente en San Cristóbal de La Laguna</span><span style="font-size:13px;color:#83838f">Vivienda unifamiliar · San Cristóbal de La Laguna</span></figcaption>
+        </figure>
+
+        <ul style="margin-top:clamp(3.5rem,7vw,5.5rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px 24px;border-top:1px solid #26262f;padding-top:48px">
+          <li data-reveal="up"><figure style="margin:0"><blockquote style="margin:0"><p style="max-width:30ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;color:#9c9ca8">La obra duró lo que dijeron y la legalización la llevaron ellos. No tuve que hacer una sola gestión.</p></blockquote><figcaption style="margin-top:24px;display:flex;flex-wrap:wrap;align-items:baseline;gap:12px"><span style="font-size:15px">Cliente en San Cristóbal de La Laguna</span><span style="font-size:13px;color:#83838f">Adosado · San Cristóbal de La Laguna</span></figcaption></figure></li>
+          <li data-reveal="up" data-delay="110"><figure style="margin:0"><blockquote style="margin:0"><p style="max-width:30ch;font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;color:#9c9ca8">Entro en la app y veo lo que produzco. Al tercer mes ya sabía exactamente cuánto estaba ahorrando.</p></blockquote><figcaption style="margin-top:24px;display:flex;flex-wrap:wrap;align-items:baseline;gap:12px"><span style="font-size:15px">Cliente en Santa Cruz de Tenerife</span><span style="font-size:13px;color:#83838f">Casa rural · Santa Cruz de Tenerife</span></figcaption></figure></li>
+        </ul>
+
+        <dl style="margin-top:clamp(3rem,6vw,5rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px;border-top:1px solid #26262f;padding-top:48px">
+          <div data-reveal="up"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Garantía de producto</dt><dd style="margin-top:16px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;font-variant-numeric:tabular-nums">15<span style="margin-left:6px;font-size:0.5em;letter-spacing:normal;color:#9c9ca8">años</span></dd></div>
+          <div data-reveal="up" data-delay="80"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Garantía de rendimiento</dt><dd style="margin-top:16px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;font-variant-numeric:tabular-nums">30<span style="margin-left:6px;font-size:0.5em;letter-spacing:normal;color:#9c9ca8">años</span></dd></div>
+          <div data-reveal="up" data-delay="160"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Garantía de instalación</dt><dd style="margin-top:16px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;font-variant-numeric:tabular-nums">5<span style="margin-left:6px;font-size:0.5em;letter-spacing:normal;color:#9c9ca8">años</span></dd></div>
+          <div data-reveal="up" data-delay="240"><dt style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Respuesta postventa</dt><dd style="margin-top:16px;font-size:clamp(1.5rem,1.15rem + 1.35vw,2.25rem);line-height:1.12;font-variant-numeric:tabular-nums">24<span style="margin-left:6px;font-size:0.5em;letter-spacing:normal;color:#9c9ca8">h</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============================ 11 · PREGUNTAS ============================ -->
+    <section id="faq" aria-labelledby="faq-h" style="padding-block:clamp(5.5rem,10vw,11rem);border-top:1px solid #26262f">
+      <div style="width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+        <div style="display:flex;flex-wrap:wrap;gap:48px 56px;align-items:flex-start">
+          <div style="flex:1 1 260px;max-width:360px;min-width:0">
+            <div style="position:sticky;top:calc(72px + 3rem)">
+              <p data-reveal="fade" style="display:flex;align-items:center;gap:12px;margin-bottom:28px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:#83838f"><span style="color:#ff6a2b">11</span><span aria-hidden="true" style="height:1px;width:24px;background:#3a3a46"></span><span>Preguntas</span></p>
+              <h2 id="faq-h" data-reveal="up" style="max-width:10ch;font-size:clamp(2.125rem,1.3rem + 3.4vw,4rem);line-height:1.02;letter-spacing:-0.035em">Antes de que preguntes.</h2>
+              <p data-reveal="up" style="margin-top:32px;max-width:30ch;font-size:15px;line-height:1.55;color:#9c9ca8">Si falta la tuya, escríbenos: respondemos personas, no formularios automáticos.</p>
+            </div>
+          </div>
+
+          <div data-reveal="fade" data-accordion="" style="flex:3 1 420px;min-width:0">
+            <div data-acc="" style="border-top:1px solid #26262f">
+              <button type="button" data-acc-btn="" aria-expanded="false" style="display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:24px;background:none;border:0;padding:26px 0;text-align:left;cursor:pointer"><span style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;max-width:34ch">¿Cuánto puedo ahorrar realmente?</span><span data-acc-icon="" aria-hidden="true" style="flex:none;width:12px;height:12px;position:relative;margin-top:8px;color:#ff6a2b"><span style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor"></span><span data-acc-bar="" style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor;transform:rotate(90deg);transition:transform 380ms cubic-bezier(.16,1,.3,1)"></span></span></button>
+              <div data-acc-panel="" style="height:0;overflow:hidden;transition:height 380ms cubic-bezier(.16,1,.3,1)"><p style="padding-bottom:28px;max-width:60ch;font-size:15px;line-height:1.62;color:#9c9ca8">Depende de tu consumo, de cuándo lo haces y de la cubierta. Una instalación bien dimensionada suele cubrir una parte significativa de la factura anual, y esa parte crece si se añade batería. La calculadora de esta web da un orden de magnitud en un minuto; el estudio técnico da la cifra real.</p></div>
+            </div>
+            <div data-acc="" style="border-top:1px solid #26262f">
+              <button type="button" data-acc-btn="" aria-expanded="false" style="display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:24px;background:none;border:0;padding:26px 0;text-align:left;cursor:pointer"><span style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;max-width:34ch">¿En cuánto tiempo se amortiza la instalación?</span><span aria-hidden="true" style="flex:none;width:12px;height:12px;position:relative;margin-top:8px;color:#ff6a2b"><span style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor"></span><span data-acc-bar="" style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor;transform:rotate(90deg);transition:transform 380ms cubic-bezier(.16,1,.3,1)"></span></span></button>
+              <div data-acc-panel="" style="height:0;overflow:hidden;transition:height 380ms cubic-bezier(.16,1,.3,1)"><p style="padding-bottom:28px;max-width:60ch;font-size:15px;line-height:1.62;color:#9c9ca8">El retorno depende de la inversión, de la producción de tu zona y del precio de la energía. En la mayoría de instalaciones residenciales bien diseñadas el periodo de retorno se sitúa en unos pocos años, muy por debajo de la vida útil del sistema. En tu propuesta lo verás calculado con tus propios datos.</p></div>
+            </div>
+            <div data-acc="" style="border-top:1px solid #26262f">
+              <button type="button" data-acc-btn="" aria-expanded="false" style="display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:24px;background:none;border:0;padding:26px 0;text-align:left;cursor:pointer"><span style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;max-width:34ch">¿Necesito batería?</span><span aria-hidden="true" style="flex:none;width:12px;height:12px;position:relative;margin-top:8px;color:#ff6a2b"><span style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor"></span><span data-acc-bar="" style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor;transform:rotate(90deg);transition:transform 380ms cubic-bezier(.16,1,.3,1)"></span></span></button>
+              <div data-acc-panel="" style="height:0;overflow:hidden;transition:height 380ms cubic-bezier(.16,1,.3,1)"><p style="padding-bottom:28px;max-width:60ch;font-size:15px;line-height:1.62;color:#9c9ca8">No siempre. Si consumes sobre todo de día, el autoconsumo directo ya aprovecha casi toda la producción. La batería tiene sentido cuando tu consumo se concentra por la noche o cuando quieres respaldo ante cortes de red. Te decimos con datos si en tu caso compensa.</p></div>
+            </div>
+            <div data-acc="" style="border-top:1px solid #26262f">
+              <button type="button" data-acc-btn="" aria-expanded="false" style="display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:24px;background:none;border:0;padding:26px 0;text-align:left;cursor:pointer"><span style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;max-width:34ch">¿Qué pasa los días nublados o en invierno?</span><span aria-hidden="true" style="flex:none;width:12px;height:12px;position:relative;margin-top:8px;color:#ff6a2b"><span style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor"></span><span data-acc-bar="" style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor;transform:rotate(90deg);transition:transform 380ms cubic-bezier(.16,1,.3,1)"></span></span></button>
+              <div data-acc-panel="" style="height:0;overflow:hidden;transition:height 380ms cubic-bezier(.16,1,.3,1)"><p style="padding-bottom:28px;max-width:60ch;font-size:15px;line-height:1.62;color:#9c9ca8">El sistema sigue produciendo, con menos rendimiento. Lo que no cubre la instalación se toma de la red de forma automática y transparente: no hay cortes ni cambios en el uso de la vivienda.</p></div>
+            </div>
+            <div data-acc="" style="border-top:1px solid #26262f">
+              <button type="button" data-acc-btn="" aria-expanded="false" style="display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:24px;background:none;border:0;padding:26px 0;text-align:left;cursor:pointer"><span style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;max-width:34ch">¿Quién se encarga de los permisos y la legalización?</span><span aria-hidden="true" style="flex:none;width:12px;height:12px;position:relative;margin-top:8px;color:#ff6a2b"><span style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor"></span><span data-acc-bar="" style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor;transform:rotate(90deg);transition:transform 380ms cubic-bezier(.16,1,.3,1)"></span></span></button>
+              <div data-acc-panel="" style="height:0;overflow:hidden;transition:height 380ms cubic-bezier(.16,1,.3,1)"><p style="padding-bottom:28px;max-width:60ch;font-size:15px;line-height:1.62;color:#9c9ca8">Nosotros. Memoria técnica, boletín, comunicación a la distribuidora, registro de autoconsumo y compensación de excedentes. Recibes la instalación legalizada y funcionando.</p></div>
+            </div>
+            <div data-acc="" style="border-top:1px solid #26262f">
+              <button type="button" data-acc-btn="" aria-expanded="false" style="display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:24px;background:none;border:0;padding:26px 0;text-align:left;cursor:pointer"><span style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;max-width:34ch">¿Qué mantenimiento necesita?</span><span aria-hidden="true" style="flex:none;width:12px;height:12px;position:relative;margin-top:8px;color:#ff6a2b"><span style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor"></span><span data-acc-bar="" style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor;transition:transform 380ms cubic-bezier(.16,1,.3,1);transform:rotate(90deg)"></span></span></button>
+              <div data-acc-panel="" style="height:0;overflow:hidden;transition:height 380ms cubic-bezier(.16,1,.3,1)"><p style="padding-bottom:28px;max-width:60ch;font-size:15px;line-height:1.62;color:#9c9ca8">Muy poco. Una revisión periódica y limpieza según la zona. La monitorización avisa si la producción se desvía de lo esperado, de modo que las incidencias se detectan antes de que las notes en la factura.</p></div>
+            </div>
+            <div data-acc="" style="border-top:1px solid #26262f">
+              <button type="button" data-acc-btn="" aria-expanded="false" style="display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:24px;background:none;border:0;padding:26px 0;text-align:left;cursor:pointer"><span style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;max-width:34ch">¿Puedo ampliar la instalación más adelante?</span><span aria-hidden="true" style="flex:none;width:12px;height:12px;position:relative;margin-top:8px;color:#ff6a2b"><span style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor"></span><span data-acc-bar="" style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor;transform:rotate(90deg);transition:transform 380ms cubic-bezier(.16,1,.3,1)"></span></span></button>
+              <div data-acc-panel="" style="height:0;overflow:hidden;transition:height 380ms cubic-bezier(.16,1,.3,1)"><p style="padding-bottom:28px;max-width:60ch;font-size:15px;line-height:1.62;color:#9c9ca8">Sí, siempre que se haya previsto en el diseño. Por eso dimensionamos el inversor y el cableado pensando en una posible ampliación o en añadir batería o punto de recarga de vehículo.</p></div>
+            </div>
+            <div data-acc="" style="border-top:1px solid #26262f;border-bottom:1px solid #26262f">
+              <button type="button" data-acc-btn="" aria-expanded="false" style="display:flex;width:100%;align-items:baseline;justify-content:space-between;gap:24px;background:none;border:0;padding:26px 0;text-align:left;cursor:pointer"><span style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);line-height:1.24;letter-spacing:-0.02em;max-width:34ch">¿Qué pasa si me mudo?</span><span aria-hidden="true" style="flex:none;width:12px;height:12px;position:relative;margin-top:8px;color:#ff6a2b"><span style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor"></span><span data-acc-bar="" style="position:absolute;top:5px;left:0;width:12px;height:1.4px;background:currentColor;transform:rotate(90deg);transition:transform 380ms cubic-bezier(.16,1,.3,1)"></span></span></button>
+              <div data-acc-panel="" style="height:0;overflow:hidden;transition:height 380ms cubic-bezier(.16,1,.3,1)"><p style="padding-bottom:28px;max-width:60ch;font-size:15px;line-height:1.62;color:#9c9ca8">La instalación forma parte del inmueble y mejora su calificación energética. La titularidad del autoconsumo se transfiere al nuevo propietario con un trámite sencillo del que también nos encargamos.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 12 · CTA FINAL ============================ -->
+    <section id="contacto" aria-labelledby="cta-h" style="position:relative;display:flex;min-height:86svh;align-items:center;overflow:hidden;border-top:1px solid #26262f">
+      <div aria-hidden="true" style="position:absolute;inset:0;z-index:0">
+        <div data-parallax="0.16" style="position:absolute;inset:-10% 0">
+          <picture><source srcset="../assets/7f4c39b8.webp" type="image/webp"><img src="../assets/7f4c39b8.webp" alt="" loading="lazy" decoding="async" style="height:100%;width:100%;object-fit:cover"></picture>
+        </div>
+        <div style="position:absolute;inset:0;background:radial-gradient(110% 80% at 50% 52%, rgba(19,19,24,0.62) 0%, rgba(19,19,24,0.80) 45%, rgba(19,19,24,0.95) 100%)"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(19,19,24,0) 8%, rgba(19,19,24,0.42) 26%, rgba(19,19,24,0.42) 74%, rgba(19,19,24,0) 94%)"></div>
+        <div style="position:absolute;inset:0;opacity:0.32;mix-blend-mode:overlay;background-image:url(&quot;../assets/ec0f0eb9.png&quot;);background-size:160px 160px;background-repeat:repeat"></div>
+      </div>
+
+      <div style="position:relative;z-index:1;width:100%;max-width:1280px;margin-inline:auto;padding:clamp(5rem,10vw,9rem) clamp(1.25rem,4vw,2.5rem);text-align:center">
+        <p data-reveal="fade" style="display:flex;align-items:center;justify-content:center;gap:12px;font-family:'Geist Mono',monospace;font-size:11px;line-height:1;letter-spacing:0.16em;text-transform:uppercase;color:rgba(237,237,242,0.6)"><span aria-hidden="true" style="height:1px;width:32px;background:#3a3a46"></span>12 · Empieza aquí<span aria-hidden="true" style="height:1px;width:32px;background:#3a3a46"></span></p>
+        <h2 id="cta-h" data-reveal="up" style="margin:40px auto 0;max-width:14ch;font-size:clamp(2.75rem,1.5rem + 5.4vw,6rem);line-height:0.97;letter-spacing:-0.04em">Empieza a producir tu propia energía.</h2>
+        <p data-reveal="up" data-delay="90" style="margin:32px auto 0;max-width:46ch;font-size:clamp(1.0625rem,0.98rem + 0.42vw,1.3125rem);line-height:1.52;letter-spacing:-0.012em;color:rgba(237,237,242,0.8)">Una estimación en un minuto. Un estudio técnico sin coste. Y una decisión tomada con números, no con promesas.</p>
+        <div data-reveal="up" data-delay="180" style="margin-top:48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px">
+          <a href="#calculadora" style="display:inline-flex;height:3.25rem;align-items:center;gap:8px;padding:0 32px;border-radius:999px;background:#ff6a2b;color:#131318;font-size:16px;font-weight:500;letter-spacing:-0.01em;transition:background-color 180ms cubic-bezier(.4,0,.2,1),box-shadow 180ms cubic-bezier(.4,0,.2,1)" style-hover="background:#ffa87e;box-shadow:0 8px 30px -8px rgba(255,106,43,0.55);color:#131318">Calcula tu ahorro<svg sc-camel-view-box="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px"><path d="M3 8h9.5M8.75 4.25 12.5 8l-3.75 3.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg></a>
+          <a href="tel:+34606991451" style="display:inline-flex;height:3.25rem;align-items:center;padding:0 32px;border-radius:999px;border:1px solid #3a3a46;color:#ededf2;font-size:16px;font-weight:500;transition:border-color 180ms,background-color 180ms" style-hover="border-color:#ededf2;background:rgba(255,255,255,0.04);color:#ededf2">Hablar con un técnico</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer style="position:relative;overflow:hidden;border-top:1px solid #26262f;background:#131318">
+    <div style="width:100%;max-width:1520px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:56px 80px;padding-block:clamp(3.5rem,7vw,6rem)">
+        <div data-reveal="fade">
+          <span style="display:inline-flex;align-items:center;gap:10px">
+            <svg sc-camel-view-box="0 0 28 28" fill="none" aria-hidden="true" style="width:24px;height:24px;color:#ededf2"><path d="M2 21.5C2 14.596 7.373 9 14 9s12 5.596 12 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="square" opacity="0.55"></path><path d="M2 25.4h24" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path><circle cx="14" cy="8.2" r="3.4" fill="#ff6a2b"></circle><path d="M14 0v3.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg>
+            <span style="font-size:15px;font-weight:500;letter-spacing:-0.03em;text-transform:uppercase">FGN</span>
+          </span>
+          <p style="margin-top:28px;max-width:26ch;font-size:clamp(1.0625rem,0.98rem + 0.42vw,1.3125rem);line-height:1.52;color:#9c9ca8">Diseñamos, instalamos y mantenemos sistemas de energía solar para quienes prefieren producir la suya.</p>
+          <div style="margin-top:40px;display:flex;flex-direction:column;gap:6px">
+            <a href="tel:+34606991451" style="font-size:clamp(1.1875rem,1.05rem + 0.55vw,1.5rem);letter-spacing:-0.02em;transition:color 180ms">606 991 451</a>
+            <a href="mailto:administracion@fgninstalaciones.com" style="width:fit-content;font-size:15px;color:#9c9ca8;transition:color 180ms">administracion@fgninstalaciones.com</a>
+            <p style="margin-top:12px;font-size:13px;color:#83838f">Lunes a viernes · 9:00 – 19:00</p>
+            <p style="font-size:13px;color:#83838f">C/ San Vicente Chimisay 23 · La Laguna</p>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:40px">
+          <nav aria-label="Soluciones" data-reveal="fade"><h2 style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Soluciones</h2><ul style="margin-top:24px;display:flex;flex-direction:column;gap:14px"><li><a href="#solucion" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Autoconsumo residencial</a></li><li><a href="#tecnologia" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Almacenamiento</a></li><li><a href="#contacto" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Empresas e industria</a></li><li><a href="#tecnologia" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Monitorización</a></li></ul></nav>
+          <nav aria-label="Compañía" data-reveal="fade"><h2 style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Compañía</h2><ul style="margin-top:24px;display:flex;flex-direction:column;gap:14px"><li><a href="#propuesta" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Nosotros</a></li><li><a href="#proyectos" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Proyectos</a></li><li><a href="#top" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Diario</a></li><li><a href="#contacto" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Contacto</a></li></ul></nav>
+          <nav aria-label="Recursos" data-reveal="fade"><h2 style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Recursos</h2><ul style="margin-top:24px;display:flex;flex-direction:column;gap:14px"><li><a href="#calculadora" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Calculadora de ahorro</a></li><li><a href="#solucion" style="font-size:15px;color:#9c9ca8;transition:color 180ms">El proceso</a></li><li><a href="#faq" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Preguntas frecuentes</a></li><li><a href="#contacto" style="font-size:15px;color:#9c9ca8;transition:color 180ms">Postventa</a></li></ul></nav>
+        </div>
+      </div>
+
+      <div data-rule="" style="height:1px;background:#3a3a46"></div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 32px;padding-block:28px">
+        <span style="font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#83838f">Acreditaciones</span>
+        <span style="font-size:13px;color:#83838f">Empresa instaladora autorizada</span>
+        <span style="font-size:13px;color:#83838f">Personal cualificado propio</span>
+        <span style="font-size:13px;color:#83838f">Certificaciones de fabricante</span>
+        <span style="font-size:13px;color:#83838f">Seguro de responsabilidad civil</span>
+      </div>
+      <div data-rule="" style="height:1px;background:#3a3a46"></div>
+
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-block:32px">
+        <p style="font-size:13px;color:#83838f">© 2026 FGN Instalaciones Todos los derechos reservados.</p>
+        <ul style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px">
+          <li><a href="#top" style="font-size:13px;color:#83838f;transition:color 180ms">Aviso legal</a></li>
+          <li><a href="#top" style="font-size:13px;color:#83838f;transition:color 180ms">Privacidad</a></li>
+          <li><a href="#top" style="font-size:13px;color:#83838f;transition:color 180ms">Cookies</a></li>
+          <li><a href="#top" style="font-size:13px;color:#83838f;transition:color 180ms">LinkedIn</a></li>
+          <li><a href="#top" style="font-size:13px;color:#83838f;transition:color 180ms">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div aria-hidden="true" style="pointer-events:none;user-select:none;overflow:hidden">
+      <p style="transform:translateY(18%);text-align:center;font-weight:500;line-height:1;letter-spacing:-0.05em;color:rgba(255,255,255,0.035);font-size:clamp(5rem,20vw,19rem)">FGN</p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;completo&quot;,&quot;sutil&quot;,&quot;ninguno&quot;],&quot;default&quot;:&quot;completo&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Movimiento&quot;},&quot;particulas&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Movimiento&quot;},&quot;titular&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;palabra a palabra&quot;,&quot;línea completa&quot;],&quot;default&quot;:&quot;palabra a palabra&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Movimiento&quot;},&quot;facturaInicial&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:120,&quot;min&quot;:40,&quot;max&quot;:400,&quot;step&quot;:5,&quot;unit&quot;:&quot;€&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Calculadora&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const root = this.el || document;
+    const q = (s) => Array.from(root.querySelectorAll(s));
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const motion = reduce ? "ninguno" : (this.props.motion || "completo");
+    const off = motion === "ninguno";
+    const soft = motion === "sutil";
+    const EASE = "cubic-bezier(.16,1,.3,1)";
+    this._cleanup = [];
+
+    /* ---------- Nav: transparente → píldora flotante ---------- */
+    const nav = root.querySelector("[data-nav]");
+    const shell = root.querySelector("[data-nav-shell]");
+    const links = root.querySelector("[data-nav-links]");
+    const quiet = root.querySelector("[data-nav-quiet]");
+    const navCta = root.querySelector("[data-nav-cta]");
+    const burger = root.querySelector("[data-drawer-open]");
+    const syncLinks = () => {
+      const w = window.innerWidth;
+      if (links) links.style.display = w >= 1024 ? "block" : "none";
+      if (quiet) quiet.style.display = w >= 1024 ? "inline-flex" : "none";
+      if (navCta) navCta.style.display = w >= 640 ? "inline-flex" : "none";
+      if (burger) burger.style.display = w >= 1024 ? "none" : "flex";
+    };
+    syncLinks();
+    const onScrollNav = () => {
+      const s = window.scrollY > 24;
+      if (nav) nav.style.paddingTop = s ? "12px" : "0px";
+      if (!shell) return;
+      if (s) {
+        shell.style.maxWidth = "1120px";
+        shell.style.padding = "10px 20px";
+        shell.style.background = "rgba(19,19,24,0.72)";
+        shell.style.backdropFilter = "blur(20px)";
+        shell.style.webkitBackdropFilter = "blur(20px)";
+        shell.style.borderColor = "rgba(255,255,255,0.08)";
+        shell.style.boxShadow = "0 18px 50px -24px rgba(0,0,0,0.9)";
+      } else {
+        shell.style.maxWidth = "1440px";
+        shell.style.padding = "20px clamp(1.25rem,4vw,2.5rem)";
+        shell.style.background = "transparent";
+        shell.style.backdropFilter = "none";
+        shell.style.webkitBackdropFilter = "none";
+        shell.style.borderColor = "transparent";
+        shell.style.boxShadow = "none";
+      }
+    };
+    onScrollNav();
+    window.addEventListener("scroll", onScrollNav, { passive: true });
+    window.addEventListener("resize", syncLinks);
+    this._cleanup.push(() => { window.removeEventListener("scroll", onScrollNav); window.removeEventListener("resize", syncLinks); });
+
+    /* ---------- Motor de reveals ---------- */
+    const dur = soft ? 560 : 900;
+    const items = q("[data-reveal]");
+    if (!off) {
+      items.forEach((el) => {
+        const kind = el.getAttribute("data-reveal");
+        const d = el.getAttribute("data-delay") || 0;
+        el.style.transitionProperty = "opacity, transform";
+        el.style.transitionDuration = dur + "ms";
+        el.style.transitionTimingFunction = EASE;
+        el.style.transitionDelay = d + "ms";
+        el.style.opacity = "0";
+        if (kind === "scale") {
+          el.style.transform = "scale(1.06)";
+        } else if (kind !== "fade") {
+          el.style.transform = "translate3d(0," + (soft ? 20 : 44) + "px,0)";
+        }
+      });
+    }
+
+    /* ---------- Filetes que se dibujan ---------- */
+    const rules = q("[data-rule]");
+    if (!off) rules.forEach((el) => {
+      el.style.transformOrigin = "left";
+      el.style.transform = "scaleX(0)";
+      el.style.transition = "transform 1100ms " + EASE;
+    });
+
+    /* ---------- Titular palabra a palabra ---------- */
+    const words = q("[data-word]");
+    const wordMode = this.props.titular || "palabra a palabra";
+    const doWords = !off && wordMode === "palabra a palabra";
+    if (doWords) words.forEach((w) => {
+      w.style.transform = "translate3d(0,105%,0)";
+      w.style.opacity = "0";
+      w.style.transition = "transform 1100ms " + EASE + ", opacity 1100ms " + EASE;
+    });
+
+    /* ---------- Dibujo de los SVG técnicos ---------- */
+    const svgs = q("[data-draw]");
+    const paths = [];
+    if (!off) svgs.forEach((svg) => {
+      svg.querySelectorAll("path, rect").forEach((p) => {
+        let len = 0;
+        try { len = p.getTotalLength ? p.getTotalLength() : 0; } catch (e) { len = 0; }
+        if (!len || len > 4000) return;
+        p.dataset.len = len;
+        p.style.strokeDasharray = len;
+        p.style.strokeDashoffset = len;
+        p.style.transition = "stroke-dashoffset 1400ms " + EASE;
+        paths.push(p);
+      });
+    });
+
+    const show = (el) => {
+      el.style.opacity = "1";
+      el.style.transform = "none";
+    };
+    const hide = (el) => {
+      const kind = el.getAttribute("data-reveal");
+      el.style.opacity = "0";
+      if (kind === "scale") el.style.transform = "scale(1.06)";
+      else if (kind !== "fade") el.style.transform = "translate3d(0," + (soft ? 20 : 44) + "px,0)";
+    };
+    const setWords = (el, on) => {
+      Array.from(el.querySelectorAll("[data-word]")).forEach((w, i) => {
+        w.style.transitionDelay = (on && doWords ? i * 130 : 0) + "ms";
+        w.style.opacity = on ? "1" : "0";
+        w.style.transform = on ? "none" : "translate3d(0,105%,0)";
+      });
+    };
+    const setDraw = (el, on) => {
+      Array.from(el.querySelectorAll("path, rect")).forEach((p, i) => {
+        if (!p.dataset.len) return;
+        p.style.transitionDelay = (on ? i * 45 : 0) + "ms";
+        p.style.strokeDashoffset = on ? "0" : p.dataset.len;
+      });
+    };
+
+    if (off) {
+      items.forEach(show);
+      rules.forEach((r) => { r.style.transform = "none"; });
+      words.forEach((w) => { w.style.opacity = "1"; w.style.transform = "none"; });
+      paths.forEach((p) => { p.style.strokeDashoffset = "0"; });
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          const el = e.target;
+          // El movimiento se rearma al salir por abajo: la animación se ve
+          // tantas veces como el visitante recorra la sección.
+          if (!e.isIntersecting) {
+            // Rearme: al salir por abajo, y también por arriba dentro del héroe,
+            // para que el titular vuelva a entrar palabra a palabra al subir.
+            const below = e.boundingClientRect.top > window.innerHeight - 8;
+            const aboveInHero = e.boundingClientRect.bottom < 0 && !!el.closest("#top");
+            if (below || aboveInHero) {
+              if (el.hasAttribute("data-reveal")) hide(el);
+              if (el.hasAttribute("data-rule")) el.style.transform = "scaleX(0)";
+              if (el.hasAttribute("data-headline")) setWords(el, false);
+              if (el.hasAttribute("data-draw")) setDraw(el, false);
+            }
+            return;
+          }
+          if (el.hasAttribute("data-reveal")) show(el);
+          if (el.hasAttribute("data-rule")) el.style.transform = "scaleX(1)";
+          if (el.hasAttribute("data-headline")) setWords(el, true);
+          if (el.hasAttribute("data-draw")) setDraw(el, true);
+          if (el.hasAttribute("data-calc-panel")) this._animateCalc(true);
+        });
+      }, { rootMargin: "0px 0px -12% 0px", threshold: 0.12 });
+      const hl = root.querySelector("[data-headline]");
+      // Dos fotogramas de espera: el estado inicial tiene que pintarse antes
+      // de revelarse, o el navegador funde los dos estados y no hay animación.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        items.forEach((el) => io.observe(el));
+        rules.forEach((el) => io.observe(el));
+        svgs.forEach((el) => io.observe(el));
+        if (hl) io.observe(hl);
+        setTimeout(() => { if (hl) setWords(hl, true); }, 300);
+      }));
+      this._cleanup.push(() => io.disconnect());
+    }
+
+    /* ---------- Parallax ---------- */
+    const px = q("[data-parallax]");
+    if (!off && px.length) {
+      let raf = 0;
+      const tick = () => {
+        raf = 0;
+        const vh = window.innerHeight;
+        px.forEach((el) => {
+          const host = el.parentElement ? el.parentElement.getBoundingClientRect() : null;
+          if (!host || host.bottom < -200 || host.top > vh + 200) return;
+          const sp = parseFloat(el.getAttribute("data-parallax")) * (soft ? 0.5 : 1);
+          el.style.transform = "translate3d(0," + (-(host.top - vh * 0.5) * sp).toFixed(1) + "px,0)";
+        });
+      };
+      const onScrollPx = () => { if (!raf) raf = requestAnimationFrame(tick); };
+      tick();
+      window.addEventListener("scroll", onScrollPx, { passive: true });
+      window.addEventListener("resize", onScrollPx);
+      this._cleanup.push(() => { window.removeEventListener("scroll", onScrollPx); window.removeEventListener("resize", onScrollPx); });
+    }
+
+    /* ---------- Partículas ---------- */
+    const cv = root.querySelector("[data-particles]");
+    const wantParticles = this.props.particulas !== false && !off;
+    if (cv && !wantParticles) cv.style.display = "none";
+    if (cv && wantParticles) {
+      const ctx = cv.getContext("2d");
+      let dots = [], w = 0, h = 0, raf = 0, live = true;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const resize = () => {
+        const r = cv.getBoundingClientRect();
+        w = r.width; h = r.height;
+        cv.width = Math.max(1, Math.floor(w * dpr));
+        cv.height = Math.max(1, Math.floor(h * dpr));
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        const n = soft ? 22 : Math.min(46, Math.round(w / 34));
+        dots = Array.from({ length: n }, () => ({
+          x: Math.random() * w, y: Math.random() * h,
+          r: 0.5 + Math.random() * 1.3,
+          vy: -(0.06 + Math.random() * 0.16),
+          vx: (Math.random() - 0.5) * 0.07,
+          a: 0.10 + Math.random() * 0.30
+        }));
+      };
+      const draw = () => {
+        raf = live ? requestAnimationFrame(draw) : 0;
+        ctx.clearRect(0, 0, w, h);
+        dots.forEach((d) => {
+          d.y += d.vy; d.x += d.vx;
+          if (d.y < -6) { d.y = h + 6; d.x = Math.random() * w; }
+          if (d.x < -6) d.x = w + 6; if (d.x > w + 6) d.x = -6;
+          ctx.beginPath();
+          ctx.arc(d.x, d.y, d.r, 0, 6.283);
+          ctx.fillStyle = "rgba(255,193,158," + d.a + ")";
+          ctx.fill();
+        });
+      };
+      resize();
+      draw();
+      const vis = new IntersectionObserver((e) => {
+        live = e[0].isIntersecting;
+        if (live && !raf) draw();
+      });
+      vis.observe(cv);
+      window.addEventListener("resize", resize);
+      this._cleanup.push(() => { live = false; if (raf) cancelAnimationFrame(raf); vis.disconnect(); window.removeEventListener("resize", resize); });
+    }
+
+    /* ---------- Marquesina ---------- */
+    const track = root.querySelector("[data-marquee-track]");
+    if (track) {
+      if (off) track.style.animation = "none";
+      else {
+        track.style.animationDuration = (soft ? 62 : 42) + "s";
+        const clone = track.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        track.parentElement.appendChild(clone);
+      }
+    }
+
+    /* ---------- Tarjetas con inclinación 3D ---------- */
+    if (!off && window.matchMedia("(hover: hover)").matches) {
+      q("[data-tilt]").forEach((card) => {
+        card.style.willChange = "transform";
+        const max = soft ? 3 : 6;
+        const move = (ev) => {
+          const r = card.getBoundingClientRect();
+          const cx = (ev.clientX - r.left) / r.width - 0.5;
+          const cy = (ev.clientY - r.top) / r.height - 0.5;
+          card.style.transition = "transform 120ms linear";
+          card.style.transform = "perspective(900px) rotateY(" + (cx * max).toFixed(2) + "deg) rotateX(" + (-cy * max).toFixed(2) + "deg) translateZ(0)";
+        };
+        const leave = () => {
+          card.style.transition = "transform 720ms " + EASE;
+          card.style.transform = "perspective(900px) rotateY(0deg) rotateX(0deg)";
+        };
+        card.addEventListener("pointermove", move);
+        card.addEventListener("pointerleave", leave);
+        this._cleanup.push(() => { card.removeEventListener("pointermove", move); card.removeEventListener("pointerleave", leave); });
+      });
+    }
+
+    /* ---------- Acordeón: pregunta en muted, cruz de acento ---------- */
+    q("[data-acc]").forEach((item, idx) => {
+      const btn = item.querySelector("[data-acc-btn]");
+      const panel = item.querySelector("[data-acc-panel]");
+      if (!btn || !panel) return;
+      const label = btn.firstElementChild;
+      const icon = btn.lastElementChild;
+      const inner = panel.firstElementChild;
+      const bar = item.querySelector("[data-acc-bar]");
+      if (bar) bar.style.transition = "none";
+      if (label) { label.style.color = "#9c9ca8"; label.style.transition = "color 180ms"; }
+      if (icon) { icon.style.color = "#83838f"; icon.style.transition = "transform 380ms " + EASE + ", color 180ms"; icon.style.transform = "rotate(0deg)"; }
+      const measure = () => (inner ? inner.getBoundingClientRect().height : 0);
+      const set = (open) => {
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+        if (open) {
+          // Se fija en px para poder animar, y se suelta a auto al terminar,
+          // para que un reflujo posterior (fuente, resize) no quede recortado.
+          panel.style.height = measure() + "px";
+        } else {
+          panel.style.height = measure() + "px";
+          void panel.offsetHeight;
+          panel.style.height = "0px";
+        }
+        if (label) label.style.color = open ? "#ededf2" : "#9c9ca8";
+        if (icon) { icon.style.transform = open ? "rotate(45deg)" : "rotate(0deg)"; icon.style.color = open ? "#ff6a2b" : "#83838f"; }
+      };
+      const onEnd = (ev) => {
+        if (ev.propertyName !== "height") return;
+        if (btn.getAttribute("aria-expanded") === "true") panel.style.height = "auto";
+      };
+      panel.addEventListener("transitionend", onEnd);
+      const toggle = () => set(btn.getAttribute("aria-expanded") !== "true");
+      btn.addEventListener("click", toggle);
+      this._cleanup.push(() => { btn.removeEventListener("click", toggle); panel.removeEventListener("transitionend", onEnd); });
+      // Si la fuente llega tarde el texto reflueye: se vuelve a medir.
+      if (inner && window.ResizeObserver) {
+        const ro = new ResizeObserver(() => {
+          if (btn.getAttribute("aria-expanded") === "true" && panel.style.height !== "auto") panel.style.height = measure() + "px";
+        });
+        ro.observe(inner);
+        this._cleanup.push(() => ro.disconnect());
+      }
+      if (idx === 0) {
+        const openFirst = () => requestAnimationFrame(() => set(true));
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(openFirst);
+        else openFirst();
+      }
+    });
+
+    /* ---------- Menú desplegable de Soluciones ---------- */
+    const mHost = root.querySelector("[data-menu-host]");
+    if (mHost) {
+      const trigger = mHost.querySelector("[data-menu-trigger]");
+      const pane = mHost.querySelector("[data-menu-panel]");
+      let t = 0;
+      const openM = () => {
+        if (t) clearTimeout(t);
+        pane.style.opacity = "1";
+        pane.style.visibility = "visible";
+        if (trigger) { trigger.setAttribute("aria-expanded", "true"); trigger.style.color = "#ededf2"; }
+      };
+      const closeM = () => {
+        t = setTimeout(() => {
+          pane.style.opacity = "0";
+          pane.style.visibility = "hidden";
+          if (trigger) { trigger.setAttribute("aria-expanded", "false"); trigger.style.color = "#9c9ca8"; }
+        }, 140);
+      };
+      mHost.addEventListener("pointerenter", openM);
+      mHost.addEventListener("pointerleave", closeM);
+      mHost.addEventListener("focusin", openM);
+      mHost.addEventListener("focusout", closeM);
+    }
+
+    /* ---------- Drawer móvil ---------- */
+    const drawer = root.querySelector("[data-drawer]");
+    if (drawer) {
+      const sheet = drawer.querySelector("[data-drawer-sheet]");
+      const dItems = Array.from(drawer.querySelectorAll("[data-drawer-item]"));
+      const setDrawer = (open) => {
+        drawer.style.opacity = open ? "1" : "0";
+        drawer.style.visibility = open ? "visible" : "hidden";
+        drawer.setAttribute("aria-hidden", open ? "false" : "true");
+        if (open) drawer.removeAttribute("inert"); else drawer.setAttribute("inert", "");
+        if (sheet) sheet.style.transform = open ? "translateY(0)" : "translateY(-12px)";
+        if (burger) burger.setAttribute("aria-expanded", open ? "true" : "false");
+        document.body.style.overflow = open ? "hidden" : "";
+        dItems.forEach((a, i) => {
+          a.style.transitionProperty = "opacity, transform";
+          a.style.transitionDuration = "720ms";
+          a.style.transitionTimingFunction = EASE;
+          a.style.transitionDelay = (open ? 60 + i * 45 : 0) + "ms";
+          a.style.opacity = open ? "1" : "0";
+          a.style.transform = open ? "none" : "translateY(12px)";
+        });
+      };
+      setDrawer(false);
+      if (burger) burger.addEventListener("click", () => setDrawer(true));
+      const cl = drawer.querySelector("[data-drawer-close]");
+      if (cl) cl.addEventListener("click", () => setDrawer(false));
+      const bd = drawer.querySelector("[data-drawer-backdrop]");
+      if (bd) bd.addEventListener("click", () => setDrawer(false));
+      dItems.forEach((a) => a.addEventListener("click", () => setDrawer(false)));
+      const onKey = (e) => { if (e.key === "Escape") setDrawer(false); };
+      window.addEventListener("keydown", onKey);
+      this._cleanup.push(() => { window.removeEventListener("keydown", onKey); document.body.style.overflow = ""; });
+    }
+
+    /* ---------- Cortina de marca ---------- */
+    const curtain = root.querySelector("[data-curtain]");
+    if (curtain) {
+      const lift = () => {
+        curtain.style.opacity = "0";
+        curtain.style.visibility = "hidden";
+        curtain.style.pointerEvents = "none";
+      };
+      if (off) lift();
+      else {
+        const ready = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+        Promise.race([ready, new Promise((r) => setTimeout(r, 1600))]).then(() => setTimeout(lift, 620));
+      }
+    }
+
+    /* ---------- Raíl de progreso ---------- */
+    const rail = root.querySelector("[data-rail]");
+    if (rail) {
+      const fillEl = rail.querySelector("[data-rail-fill]");
+      const idxEl = rail.querySelector("[data-rail-index]");
+      const sections = q("main > section");
+      const syncRail = () => {
+        const show = window.innerWidth >= 1024 && window.scrollY > window.innerHeight * 0.6;
+        rail.style.display = window.innerWidth >= 1024 ? "flex" : "none";
+        rail.style.opacity = show ? "1" : "0";
+        const doc = document.documentElement.scrollHeight - window.innerHeight;
+        const p = doc > 0 ? Math.min(Math.max(window.scrollY / doc, 0), 1) : 0;
+        if (fillEl) fillEl.style.height = (p * 100).toFixed(1) + "%";
+        if (idxEl) {
+          const mid = window.scrollY + window.innerHeight * 0.4;
+          let n = 1;
+          sections.forEach((s, i) => { if (s.offsetTop <= mid) n = i + 1; });
+          const label = String(n).padStart(2, "0");
+          if (idxEl.textContent !== label) idxEl.textContent = label;
+        }
+      };
+      syncRail();
+      window.addEventListener("scroll", syncRail, { passive: true });
+      window.addEventListener("resize", syncRail);
+      this._cleanup.push(() => { window.removeEventListener("scroll", syncRail); window.removeEventListener("resize", syncRail); });
+    }
+
+    /* ---------- Los cuatro pasos guían el diagrama ---------- */
+    const stepEls = q("[data-step]");
+    const focus = root.querySelector("[data-focus]");
+    if (stepEls.length && focus) {
+      const ring = focus.querySelector("[data-focus-ring]");
+      const halo = focus.querySelector("[data-focus-halo]");
+      const paint = (el, active) => {
+        const head = el.querySelector("h3");
+        const body = el.querySelector("p");
+        const letter = el.querySelector("[data-step-letter]");
+        el.style.transition = "border-color 620ms " + EASE;
+        el.style.borderTopColor = active ? "#ff6a2b" : "#26262f";
+        if (head) { head.style.transition = "color 620ms " + EASE; head.style.color = active ? "#ededf2" : "#83838f"; }
+        if (body) { body.style.transition = "color 620ms " + EASE + ", opacity 620ms " + EASE; body.style.opacity = active ? "1" : "0.5"; }
+        if (letter) { letter.style.transition = "opacity 620ms " + EASE; letter.style.opacity = active ? "1" : "0.45"; }
+      };
+      const activate = (el) => {
+        stepEls.forEach((s) => paint(s, s === el));
+        focus.style.opacity = "1";
+        [ring, halo].forEach((c) => {
+          if (!c) return;
+          c.setAttribute("cx", el.getAttribute("data-cx"));
+          c.setAttribute("cy", el.getAttribute("data-cy"));
+          c.setAttribute("r", el.getAttribute("data-r"));
+        });
+      };
+      if (off) { stepEls.forEach((s) => paint(s, true)); focus.style.opacity = "0"; }
+      else {
+        stepEls.forEach((s) => paint(s, false));
+        const sio = new IntersectionObserver((entries) => {
+          const hit = entries.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+          if (hit) activate(hit.target);
+        }, { rootMargin: "-42% 0px -42% 0px", threshold: 0 });
+        stepEls.forEach((s) => sio.observe(s));
+        this._cleanup.push(() => sio.disconnect());
+      }
+    }
+
+    /* ---------- Fotografía: cortinilla de máscara y asentamiento de escala ---------- */
+    const masks = [];
+    if (!off) {
+      q("figure > div > img, [data-tilt] img, #proyectos img").forEach((img) => {
+        const frame = img.parentElement;
+        // Se observa un ancestro SIN recortar: un elemento con clip-path deja de
+        // ser visible para el detector y nunca llegaría a abrirse.
+        const watch = frame && frame.parentElement ? frame.parentElement : frame;
+        if (!frame || !watch) return;
+        frame.style.clipPath = "inset(0 0 100% 0)";
+        frame.style.transition = "clip-path 1100ms " + EASE;
+        img.style.transform = "scale(1.14)";
+        img.style.transition = "transform 1400ms " + EASE;
+        let opened = false;
+        const open = () => {
+          if (opened) return;
+          opened = true;
+          frame.style.clipPath = "inset(0 0 0 0)";
+          img.style.transform = "scale(1)";
+        };
+        masks.push({ watch, open, isOpen: () => opened });
+      });
+
+      let mraf = 0;
+      const scanMasks = () => {
+        mraf = 0;
+        const vh = window.innerHeight;
+        let pending = 0;
+        masks.forEach((m) => {
+          if (m.isOpen()) return;
+          pending++;
+          const r = m.watch.getBoundingClientRect();
+          // Dentro de la ventana, o ya rebasado por arriba: en ambos casos abierto.
+          if (r.bottom <= 0 || r.top < vh * 0.88) m.open();
+        });
+        if (!pending) {
+          window.removeEventListener("scroll", onScrollMask);
+          window.removeEventListener("resize", onScrollMask);
+        }
+      };
+      const onScrollMask = () => { if (!mraf) mraf = requestAnimationFrame(scanMasks); };
+      requestAnimationFrame(scanMasks);
+      window.addEventListener("scroll", onScrollMask, { passive: true });
+      window.addEventListener("resize", onScrollMask);
+      this._cleanup.push(() => { window.removeEventListener("scroll", onScrollMask); window.removeEventListener("resize", onScrollMask); });
+    }
+
+    /* ---------- Botones magnéticos ---------- */
+    if (!off && window.matchMedia("(hover: hover)").matches) {
+      q('a[href="#calculadora"], a[href="#contacto"], a[href^="tel:"]').forEach((btn) => {
+        if (btn.closest("[data-drawer]") || btn.closest("footer")) return;
+        btn.style.willChange = "transform";
+        const move = (ev) => {
+          const r = btn.getBoundingClientRect();
+          const dx = (ev.clientX - (r.left + r.width / 2)) / r.width;
+          const dy = (ev.clientY - (r.top + r.height / 2)) / r.height;
+          btn.style.transition = "transform 120ms linear, background-color 180ms, box-shadow 180ms";
+          btn.style.transform = "translate3d(" + (dx * 7).toFixed(1) + "px," + (dy * 5).toFixed(1) + "px,0)";
+        };
+        const out = () => {
+          btn.style.transition = "transform 720ms " + EASE + ", background-color 180ms, box-shadow 180ms";
+          btn.style.transform = "translate3d(0,0,0)";
+        };
+        btn.addEventListener("pointermove", move);
+        btn.addEventListener("pointerleave", out);
+        this._cleanup.push(() => { btn.removeEventListener("pointermove", move); btn.removeEventListener("pointerleave", out); });
+      });
+    }
+
+    /* ---------- La cinta reacciona al scroll y se detiene al pasar el ratón ---------- */
+    const mq = root.querySelector("[data-marquee]");
+    if (mq && !off) {
+      const tracks = Array.from(mq.querySelectorAll("[data-marquee-track]"));
+      let last = window.scrollY, raf = 0;
+      const relax = () => { raf = 0; tracks.forEach((t) => { t.style.animationDuration = (soft ? 62 : 42) + "s"; }); };
+      const onScroll = () => {
+        const v = Math.min(Math.abs(window.scrollY - last), 90);
+        last = window.scrollY;
+        const dur = Math.max((soft ? 62 : 42) - v * 0.34, 7);
+        tracks.forEach((t) => { t.style.animationDuration = dur.toFixed(1) + "s"; });
+        if (raf) clearTimeout(raf);
+        raf = setTimeout(relax, 260);
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      mq.addEventListener("pointerenter", () => tracks.forEach((t) => { t.style.animationPlayState = "paused"; }));
+      mq.addEventListener("pointerleave", () => tracks.forEach((t) => { t.style.animationPlayState = "running"; }));
+      this._cleanup.push(() => window.removeEventListener("scroll", onScroll));
+    }
+
+    /* ---------- Fichas de proyecto: acercamiento y fila que responde ---------- */
+    if (!off && window.matchMedia("(hover: hover)").matches) {
+      q("#proyectos article").forEach((card) => {
+        const img = card.querySelector("img");
+        const head = card.querySelector("h3");
+        const meta = card.querySelector("span[style*='text-align:right']");
+        const enter = () => {
+          if (img) { img.style.transition = "transform 1100ms " + EASE; img.style.transform = "scale(1.06)"; }
+          if (head) { head.style.transition = "color 380ms " + EASE; head.style.color = "#ff6a2b"; }
+          if (meta) { meta.style.transition = "color 380ms " + EASE; meta.style.color = "#ededf2"; }
+        };
+        const leave = () => {
+          if (img) img.style.transform = "scale(1)";
+          if (head) head.style.color = "#ededf2";
+          if (meta) meta.style.color = "#83838f";
+        };
+        card.addEventListener("pointerenter", enter);
+        card.addEventListener("pointerleave", leave);
+        this._cleanup.push(() => { card.removeEventListener("pointerenter", enter); card.removeEventListener("pointerleave", leave); });
+      });
+    }
+
+    /* ---------- El héroe cede el paso: se aleja y se apaga al salir ---------- */
+    const heroSection = root.querySelector("#top");
+    if (heroSection && !off) {
+      const content = heroSection.children[1];
+      let hraf = 0;
+      const tick = () => {
+        hraf = 0;
+        if (!content) return;
+        // El desvanecido arranca sólo cuando el héroe ya está saliendo: mientras
+        // el titular ocupa pantalla se mantiene a opacidad plena, para no bajar
+        // del 4,5:1 medido sobre la fotografía.
+        const vh = window.innerHeight;
+        const bottom = heroSection.getBoundingClientRect().bottom;
+        const start = vh * 0.5;
+        const p = bottom >= start ? 0 : Math.min((start - bottom) / start, 1);
+        content.style.opacity = (1 - p).toFixed(3);
+        content.style.transform = "translate3d(0," + (p * -60).toFixed(1) + "px,0)";
+      };
+      const onScrollHero = () => { if (!hraf) hraf = requestAnimationFrame(tick); };
+      tick();
+      window.addEventListener("scroll", onScrollHero, { passive: true });
+      this._cleanup.push(() => window.removeEventListener("scroll", onScrollHero));
+    }
+
+    /* ---------- Calculadora ---------- */
+    this._calcInit(root);
+  }
+
+  /* Modelo de estimación: mismos supuestos que lib/calc.ts y calcModel del proyecto */
+  _calcInit(root) {
+    const M = { gridPrice: 0.24, surplusPrice: 0.07, battUplift: 0.28, selfCap: 0.92, battPrice: 620, degradation: 0.005, inflation: 0.03, horizon: 25, basePrice: 1450, co2: 0.19 };
+    const st = { bill: Number(this.props.facturaInicial) || 120, yield: 1400, maxKwp: 10, self: 0.40, billMax: 600, battery: false };
+    const out = (k) => root.querySelector('[data-out="' + k + '"]');
+    const bar = root.querySelector("[data-bar]");
+    const range = root.querySelector("[data-calc-bill]");
+    const fill = root.querySelector("[data-fill]");
+    if (range) range.value = st.bill;
+    const eur = (v) => Math.round(v).toLocaleString("es-ES") + " €";
+    const num = (v, d) => v.toLocaleString("es-ES", { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 });
+    const clamp = (v, a, b) => Math.min(Math.max(v, a), b);
+
+    const model = () => {
+      const annualBill = st.bill * 12;
+      const consumption = annualBill / M.gridPrice;
+      const kwp = clamp(Math.round(((consumption * 1.1) / st.yield) * 2) / 2, 2, st.maxKwp);
+      const production = kwp * st.yield;
+      // El €/kWp depende SOLO del tamaño de la instalación. El tipo de inmueble
+      // fija el techo de cubierta, nunca el precio: a igual tamaño, igual coste.
+      const scale = clamp(Math.pow(5 / kwp, 0.18), 0.58, 1.12);
+      const pricePerKwp = M.basePrice * scale;
+      const battKwh = st.battery ? clamp(Math.round((consumption / 365) * 0.55), 5, 20) : 0;
+      // El perfil de consumo lo fija el inmueble: una nave consume en horas de sol
+      // y aprovecha más su producción que una vivienda, que consume de noche.
+      const ratio = Math.min(st.self + (st.battery ? M.battUplift : 0), M.selfCap);
+      const selfC = Math.min(production * ratio, consumption);
+      const surplus = Math.max(production - selfC, 0);
+      const saving = selfC * M.gridPrice + surplus * M.surplusPrice;
+      const investment = kwp * pricePerKwp + battKwh * M.battPrice;
+      // Serie a 25 años: el ahorro sube con la energía y baja con la degradación.
+      let cum = 0, cost25 = 0, payback = 0;
+      for (let y = 0; y < M.horizon; y++) {
+        const yearSaving = saving * Math.pow(1 + M.inflation, y) * Math.pow(1 - M.degradation, y);
+        const prev = cum;
+        cum += yearSaving;
+        cost25 += annualBill * Math.pow(1 + M.inflation, y);
+        if (!payback && cum >= investment) payback = y + (investment - prev) / yearSaving;
+      }
+      if (!payback) payback = M.horizon;
+      const withMeridia = cost25 - cum + investment;
+      return {
+        consumption, kwp, production, battKwh, saving, investment, pricePerKwp, payback,
+        coverage: Math.min((selfC / consumption) * 100, 100),
+        co2: production * M.co2,
+        cost25, withMeridia,
+        diff: Math.max(cost25 - withMeridia, 0),
+        ratio: cost25 > 0 ? Math.min(Math.max(withMeridia / cost25, 0), 1) : 0
+      };
+    };
+
+    const keys = ["consumption", "kwp", "production", "saving", "investment", "pricePerKwp", "coverage", "payback", "co2", "cost25", "withMeridia", "diff", "ratio"];
+    this._calcFrom = null;
+
+    this._animateCalc = (fromZero) => {
+      const t = model();
+      const zero = {}; keys.forEach((k) => { zero[k] = 0; });
+      const from = fromZero || !this._calcFrom ? zero : this._calcFrom;
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const D = reduce || this.props.motion === "ninguno" ? 0 : (fromZero ? 1100 : 380);
+      const t0 = performance.now();
+      if (this._calcRaf) cancelAnimationFrame(this._calcRaf);
+
+      const set = (k, txt) => { const e = out(k); if (e) e.textContent = txt; };
+      const write = (v) => {
+        set("saving", eur(v.saving));
+        set("coverage", num(v.coverage, 0) + " %");
+        set("kwp", num(v.kwp, v.kwp % 1 ? 1 : 0) + " kWp");
+        set("production", num(v.production, 0) + " kWh");
+        set("investment", eur(v.investment));
+        set("pricekwp", eur(v.pricePerKwp) + "/kWp");
+        set("payback", num(v.payback, 1) + " años");
+        set("co2", num(v.co2, 0) + " kg");
+        set("cost25", eur(v.cost25));
+        set("withmeridia", eur(v.withMeridia));
+        set("diff", eur(v.diff));
+        set("consumption", "≈ " + num(v.consumption, 0) + " kWh/año");
+        if (bar) bar.style.width = Math.max(v.ratio * 100, 2).toFixed(1) + "%";
+      };
+
+      set("bill", eur(st.bill));
+      set("battnote", t.battKwh ? " y " + num(t.battKwh, 0) + " kWh de batería" : "");
+      set("invnote", "incluye la inversión de " + eur(t.investment));
+      const battOn = root.querySelector('[data-batt="1"] [data-sub]');
+      if (battOn) battOn.textContent = st.battery ? num(t.battKwh, 0) + " kWh estimados" : "Mayor cobertura";
+      // El relleno sigue al centro del tirador: recorre el ancho menos su diámetro.
+      if (range && fill) {
+        const w = range.getBoundingClientRect().width;
+        const p = (st.bill - Number(range.min)) / (Number(range.max) - Number(range.min));
+        fill.style.width = (16 + p * Math.max(w - 32, 0)).toFixed(1) + "px";
+      }
+
+      const step = (now) => {
+        const p = D ? Math.min((now - t0) / D, 1) : 1;
+        const e = 1 - Math.pow(1 - p, 3);
+        const v = {};
+        keys.forEach((k) => { v[k] = from[k] + (t[k] - from[k]) * e; });
+        write(v);
+        if (p < 1) this._calcRaf = requestAnimationFrame(step);
+        else { this._calcFrom = t; this._calcRaf = 0; }
+      };
+      this._calcRaf = requestAnimationFrame(step);
+    };
+
+    /* Choice cards: seleccionada en onyx sobre papel */
+    const paint = (btn, on) => {
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      btn.style.background = on ? "#131318" : "transparent";
+      btn.style.borderColor = on ? "#131318" : "#d6d2ca";
+      btn.style.color = on ? "#f2f0ec" : "#131318";
+      const sub = btn.querySelector("[data-sub]");
+      if (sub) sub.style.color = on ? "rgba(242,240,236,0.65)" : "#5f5c56";
+    };
+    const group = (sel, attr, apply) => {
+      const wrap = root.querySelector(sel);
+      if (!wrap) return;
+      const onClick = (ev) => {
+        const b = ev.target.closest("[" + attr + "]");
+        if (!b || !wrap.contains(b)) return;
+        Array.from(wrap.querySelectorAll("[" + attr + "]")).forEach((x) => paint(x, x === b));
+        apply(b);
+        this._animateCalc(false);
+      };
+      wrap.addEventListener("click", onClick);
+      this._cleanup.push(() => wrap.removeEventListener("click", onClick));
+    };
+
+    group("[data-calc-zone]", "data-zone", (b) => { st.yield = Number(b.getAttribute("data-yield")); });
+    group("[data-calc-prop]", "data-prop", (b) => {
+      st.maxKwp = Number(b.getAttribute("data-maxkwp"));
+      st.self = Number(b.getAttribute("data-self"));
+      st.billMax = Number(b.getAttribute("data-billmax"));
+      // El recorrido de la factura se adapta al inmueble: una nave llega
+      // a facturas que una vivienda nunca tiene, y su techo se puede alcanzar.
+      if (range) {
+        range.max = st.billMax;
+        if (st.bill > st.billMax) { st.bill = st.billMax; range.value = st.bill; }
+      }
+      const maxLabel = root.querySelector('[data-out="billmax"]');
+      if (maxLabel) maxLabel.textContent = st.billMax.toLocaleString("es-ES") + " €";
+    });
+    group("[data-calc-batt]", "data-batt", (b) => { st.battery = b.getAttribute("data-batt") === "1"; });
+
+    if (range) {
+      const onInput = () => { st.bill = Number(range.value); this._animateCalc(false); };
+      range.addEventListener("input", onInput);
+      const onResize = () => this._animateCalc(false);
+      window.addEventListener("resize", onResize);
+      this._cleanup.push(() => { range.removeEventListener("input", onInput); window.removeEventListener("resize", onResize); });
+    }
+
+    this._animateCalc(false);
+  }
+
+  componentWillUnmount() {
+    if (this._calcRaf) cancelAnimationFrame(this._calcRaf);
+    (this._cleanup || []).forEach((f) => { try { f(); } catch (e) {} });
+  }
+
+  renderVals() { return {}; }
+}
+</script>
+
+
+<div style="position:fixed;left:16px;bottom:16px;z-index:9998;max-width:min(92vw,420px);background:rgba(19,19,24,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px 14px;font:400 12px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;color:#c9c9d2;box-shadow:0 18px 50px -24px rgba(0,0,0,.9)"><strong style="color:#ff6a2b;font-weight:500">Maqueta de demostración</strong> para FGN Instalaciones, creada por <a href="https://www.cauce-estudios.com" style="color:#ededf2;text-decoration:underline;text-underline-offset:2px">Cauce Estudios</a>. Las cifras, proyectos y testimonios son de ejemplo.</div></body></html>
