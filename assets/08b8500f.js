@@ -1909,3 +1909,10 @@
     throw err;
   });
 })();
+
+/* cauce-contador: registra la visita de cada maqueta (sin cookies, solo slug+hora) */
+(function(){try{
+var s=location.pathname.split("/").filter(Boolean)[0]||"raiz";
+if(sessionStorage.getItem("cv-"+s))return;sessionStorage.setItem("cv-"+s,"1");
+fetch("https://lgicvvvbockiayeqvokl.supabase.co/rest/v1/visitas_demo",{method:"POST",keepalive:true,headers:{"Content-Type":"application/json","apikey":"sb_publishable_Xw8P_o_nZaNX7E3swa2n-A_m1n6dQ03","Prefer":"return=minimal"},body:JSON.stringify({slug:s})}).catch(function(){});
+}catch(e){}})();
