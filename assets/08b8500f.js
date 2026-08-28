@@ -1910,9 +1910,51 @@
   });
 })();
 
-/* cauce-contador: registra la visita de cada maqueta (sin cookies, solo slug+hora) */
+/* cauce-contador v2: visita + intencion. Sin cookies ni datos personales:
+   la sesion es un id aleatorio que muere al cerrar la pestana. Para no contarte
+   a ti mismo, ejecuta una vez en la consola: localStorage.setItem('cv-off','1') */
 (function(){try{
-var s=location.pathname.split("/").filter(Boolean)[0]||"raiz";
-if(sessionStorage.getItem("cv-"+s))return;sessionStorage.setItem("cv-"+s,"1");
-fetch("https://lgicvvvbockiayeqvokl.supabase.co/rest/v1/visitas_demo",{method:"POST",keepalive:true,headers:{"Content-Type":"application/json","apikey":"sb_publishable_Xw8P_o_nZaNX7E3swa2n-A_m1n6dQ03","Prefer":"return=minimal"},body:JSON.stringify({slug:s})}).catch(function(){});
+var S=location.pathname.split("/").filter(Boolean)[0]||"raiz";
+var U="https://lgicvvvbockiayeqvokl.supabase.co/rest/v1/";
+var K="sb_publishable_Xw8P_o_nZaNX7E3swa2n-A_m1n6dQ03";
+try{if(localStorage.getItem("cv-off"))return;}catch(e){}
+var SS=sessionStorage.getItem("cs-"+S);
+if(!SS){SS=Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4);sessionStorage.setItem("cs-"+S,SS);}
+var D=(window.matchMedia&&matchMedia("(max-width:767px)").matches)?"movil":"escritorio";
+function P(t,b){try{fetch(U+t,{method:"POST",keepalive:true,headers:{"Content-Type":"application/json","apikey":K,"Prefer":"return=minimal"},body:JSON.stringify(b)}).catch(function(){});}catch(e){}}
+function E(tipo,det,ms){P("eventos_demo",{slug:S,sesion:SS,tipo:tipo,detalle:det||null,ms:ms||null,dispositivo:D});}
+/* 1 · visita: misma deduplicacion que la v1, para no romper el historico */
+if(!sessionStorage.getItem("cv-"+S)){sessionStorage.setItem("cv-"+S,"1");P("visitas_demo",{slug:S});E("visita");}
+/* 2 · secciones vistas, una sola vez cada una.
+   No se usa IntersectionObserver: en estas maquetas las secciones miden 0 de
+   ancho (el scroll lo lleva un contenedor propio) y nunca llegaria a disparar.
+   Se comprueba el solape vertical con la ventana, que si es fiable. */
+var vis={},IDS=["top","solucion","tecnologia","propuesta","proyectos","calculadora","faq","contacto"],pend=IDS.length,tmr;
+function mirar(){var h=window.innerHeight||document.documentElement.clientHeight;
+for(var i=0;i<IDS.length;i++){var id=IDS[i];if(vis[id])continue;
+var el=document.getElementById(id);if(!el)continue;
+var r=el.getBoundingClientRect();
+if(r.top<h*0.6&&r.bottom>h*0.4){vis[id]=1;pend--;E("seccion",id);}}
+if(pend<=0&&tmr){clearInterval(tmr);tmr=0;}}
+window.addEventListener("scroll",mirar,{passive:true,capture:true});
+tmr=setInterval(mirar,1000);mirar();
+/* 3 · clics con intencion */
+document.addEventListener("click",function(e){
+var a=(e.target&&e.target.closest)?e.target.closest("a,button"):null;if(!a)return;
+var h=a.getAttribute("href")||"";
+if(/^tel:/.test(h))E("cta","telefono");
+else if(/^mailto:/.test(h))E("cta","email");
+else if(/#calculadora/.test(h))E("cta","calculadora");
+else if(/#contacto/.test(h))E("cta","contacto");},true);
+/* 4 · uso real de la calculadora */
+var uso=0;
+document.addEventListener("input",function(e){if(uso)return;var t=e.target;
+if(t&&(t.type==="range"||(t.closest&&t.closest("#calculadora")))){uso=1;E("calculadora","uso");}},true);
+/* 5 · tiempo visible acumulado */
+var acc=0,d0=Date.now();
+function pausa(){if(d0){acc+=Date.now()-d0;d0=0;}}
+function sigue(){if(!d0)d0=Date.now();}
+function fin(){pausa();if(acc>1500)E("fin",null,Math.min(7200000,acc));}
+document.addEventListener("visibilitychange",function(){document.visibilityState==="hidden"?fin():sigue();});
+window.addEventListener("pagehide",fin);
 }catch(e){}})();
