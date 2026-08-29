@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Vídeo cinematográfico para alojamientos · Cauce Estudios</title>
+<meta name="description" content="Convertimos la fotografía que ya tenéis en un vídeo cinematográfico. Sin rodaje, sin visita y sin cerrar la casa.">
+<meta name="theme-color" content="#04060C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#04060C;
+    --ink-deep:#020409;
+    --ink-soft:#0A0E17;
+    --paper:#EDF0F7;
+    --signal:#5B82FF;
+    --rgb-signal:91,130,255;
+    --line:rgba(237,240,247,.13);
+    --line-soft:rgba(237,240,247,.07);
+    --dim:rgba(237,240,247,.58);
+    --dimmer:rgba(237,240,247,.38);
+    --display:"Bricolage Grotesque",Georgia,serif;
+    --sans:"Instrument Sans",system-ui,-apple-system,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+    --pad:clamp(20px,5.5vw,80px);
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--ink);color:var(--paper);
+    font-family:var(--sans);font-weight:400;line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 var(--pad)}
+  .eyebrow{
+    font-family:var(--mono);font-size:10.5px;font-weight:400;letter-spacing:.19em;
+    text-transform:uppercase;color:var(--dimmer);display:flex;align-items:center;gap:12px;
+  }
+  .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--signal);flex:none}
+  a{color:inherit}
+
+  /* ---------- barra ---------- */
+  .bar{
+    position:sticky;top:0;z-index:50;background:rgba(4,6,12,.82);
+    backdrop-filter:saturate(150%) blur(14px);-webkit-backdrop-filter:saturate(150%) blur(14px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .bar-in{max-width:1080px;margin:0 auto;padding:14px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .marca{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .punto{width:9px;height:9px;border-radius:50%;background:var(--signal);flex:none;
+    box-shadow:0 0 0 4px rgba(var(--rgb-signal),.14)}
+  .marca b{font-family:var(--display);font-weight:500;font-size:15.5px;letter-spacing:-.025em}
+  .marca span{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--dimmer);margin-top:2px}
+  .bar .btn{font-size:13px;padding:8px 16px}
+
+  /* ---------- botones ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    font-family:var(--sans);font-size:14.5px;font-weight:500;
+    padding:13px 24px;border-radius:999px;border:1px solid transparent;
+    transition:transform .35s var(--ease),background .25s,border-color .25s;
+    white-space:nowrap;
+  }
+  .btn-solid{background:var(--signal);color:#fff}
+  .btn-solid:hover{transform:translateY(-2px);background:#4A73F5}
+  .btn-line{border-color:var(--line);color:var(--paper)}
+  .btn-line:hover{transform:translateY(-2px);border-color:rgba(237,240,247,.34)}
+
+  /* ---------- portada ---------- */
+  #top{position:relative;padding:clamp(48px,8vw,92px) 0 clamp(40px,6vw,64px)}
+  #top::before{
+    content:"";position:absolute;top:-160px;left:50%;transform:translateX(-50%);
+    width:min(1100px,140vw);height:640px;pointer-events:none;
+    background:radial-gradient(50% 50% at 50% 50%, rgba(var(--rgb-signal),.13) 0%, rgba(var(--rgb-signal),.04) 45%, transparent 72%);
+  }
+  #top .wrap{position:relative}
+  h1{
+    font-family:var(--display);font-weight:500;letter-spacing:-.03em;
+    font-size:clamp(34px,6.4vw,68px);line-height:1.02;margin:22px 0 0;max-width:16ch;
+  }
+  h1 em{display:block;font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(237,240,247,.62)}
+  .lede{margin:22px 0 0;max-width:46ch;font-size:clamp(15.5px,1.7vw,18px);color:var(--dim)}
+
+  /* ---------- reproductor ---------- */
+  .reproductor{margin:clamp(30px,4.5vw,44px) 0 0;position:relative}
+  .marco{
+    position:relative;border-radius:14px;overflow:hidden;background:#000;
+    border:1px solid var(--line);
+    box-shadow:0 40px 90px -40px rgba(0,0,0,.9), 0 0 0 1px rgba(var(--rgb-signal),.05);
+  }
+  video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
+  .pie{
+    margin:14px 2px 0;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dimmer);
+  }
+
+  /* ---------- secciones ---------- */
+  section{padding:clamp(56px,8vw,104px) 0}
+  section + section{border-top:1px solid var(--line-soft)}
+  h2{
+    font-family:var(--display);font-weight:500;letter-spacing:-.025em;
+    font-size:clamp(26px,3.7vw,40px);line-height:1.08;margin:18px 0 0;max-width:20ch;
+  }
+  .intro{margin:16px 0 0;max-width:52ch;color:var(--dim);font-size:16px}
+
+  /* ---------- pasos ---------- */
+  /* 3 tarjetas: o van las tres en fila o van apiladas. Con auto-fit quedaban
+     dos arriba y una huerfana abajo justo en anchura de tablet. */
+  .pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line-soft);border:1px solid var(--line-soft);border-radius:12px;
+    overflow:hidden;margin-top:clamp(30px,4vw,44px)}
+  .paso{background:var(--ink);padding:26px 24px 28px}
+  .paso b{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--signal);display:block}
+  .paso h3{font-family:var(--display);font-weight:500;font-size:19.5px;letter-spacing:-.02em;margin:13px 0 8px}
+  .paso p{margin:0;font-size:14.5px;color:var(--dim);line-height:1.62}
+
+  /* ---------- aviso ---------- */
+  .aviso{
+    margin-top:clamp(30px,4vw,44px);border:1px solid rgba(var(--rgb-signal),.28);
+    background:linear-gradient(180deg, rgba(var(--rgb-signal),.09), rgba(var(--rgb-signal),.03));
+    border-radius:12px;padding:clamp(24px,3.4vw,34px);
+  }
+  .aviso h3{font-family:var(--display);font-weight:500;font-size:clamp(20px,2.5vw,26px);
+    letter-spacing:-.022em;margin:14px 0 10px}
+  .aviso p{margin:0;color:var(--dim);font-size:15.5px;max-width:62ch}
+  .aviso strong{color:var(--paper);font-weight:500}
+
+  /* ---------- entregables ---------- */
+  .piezas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+    margin-top:clamp(30px,4vw,44px)}
+  .pieza{border:1px solid var(--line-soft);border-radius:12px;padding:24px;background:var(--ink-soft)}
+  .pieza .fmt{font-family:var(--mono);font-size:11px;letter-spacing:.13em;color:var(--signal)}
+  .pieza h3{font-family:var(--display);font-weight:500;font-size:18.5px;letter-spacing:-.02em;margin:12px 0 7px}
+  .pieza p{margin:0;font-size:14px;color:var(--dim);line-height:1.6}
+  .relacion{margin-top:16px;height:52px;display:flex;align-items:flex-end;gap:7px}
+  .relacion i{display:block;border:1px solid rgba(var(--rgb-signal),.4);
+    background:rgba(var(--rgb-signal),.09);border-radius:2px}
+
+  /* ---------- dónde se usa ---------- */
+  .usos{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    background:var(--line-soft);border:1px solid var(--line-soft);border-radius:12px;
+    overflow:hidden;margin-top:clamp(30px,4vw,44px)}
+  .uso{background:var(--ink);padding:24px}
+  .uso h3{font-family:var(--display);font-weight:500;font-size:17.5px;letter-spacing:-.02em;margin:0 0 7px}
+  .uso p{margin:0;font-size:13.8px;color:var(--dim);line-height:1.6}
+  .uso.no{background:var(--ink-deep)}
+  .uso.no h3{color:var(--dimmer)}
+  .uso.no p{color:var(--dimmer)}
+
+  /* ---------- preguntas ---------- */
+  .faq{margin-top:clamp(30px,4vw,44px);border-top:1px solid var(--line-soft)}
+  details{border-bottom:1px solid var(--line-soft)}
+  summary{
+    cursor:pointer;list-style:none;padding:22px 44px 22px 0;position:relative;
+    font-family:var(--display);font-weight:500;font-size:clamp(16.5px,2vw,19px);
+    letter-spacing:-.018em;transition:color .2s;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary:hover{color:var(--signal)}
+  summary::after{
+    content:"";position:absolute;right:6px;top:50%;width:9px;height:9px;
+    border-right:1.5px solid var(--dimmer);border-bottom:1.5px solid var(--dimmer);
+    transform:translateY(-70%) rotate(45deg);transition:transform .3s var(--ease);
+  }
+  details[open] summary::after{transform:translateY(-25%) rotate(225deg)}
+  details p{margin:0 0 24px;max-width:66ch;color:var(--dim);font-size:15.3px}
+
+  /* ---------- contacto ---------- */
+  #contacto{border-top:1px solid var(--line)}
+  .cta-caja{
+    border:1px solid var(--line);border-radius:14px;background:var(--ink-soft);
+    padding:clamp(30px,4.6vw,52px);text-align:center;
+    background-image:radial-gradient(70% 120% at 50% 0%, rgba(var(--rgb-signal),.1), transparent 62%);
+  }
+  .cta-caja h2{margin:16px auto 0;max-width:18ch}
+  .cta-caja .intro{margin:16px auto 0}
+  .acciones{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .eyebrow.centro{justify-content:center}
+
+  footer{border-top:1px solid var(--line-soft);padding:30px 0 42px}
+  .pie-in{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--dimmer)}
+  .pie-in a{text-decoration:none}
+  .pie-in a:hover{color:var(--paper)}
+
+  @media (max-width:1000px){
+    .usos{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:860px){
+    .pasos,.piezas{grid-template-columns:1fr}
+  }
+  @media (max-width:620px){
+    .usos{grid-template-columns:1fr}
+    .acciones .btn{width:100%;justify-content:center}
+  }
+
+  :focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:4px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-in">
+    <a class="marca" href="https://cauce-estudios.com">
+      <span class="punto" aria-hidden="true"></span>
+      <span><b>Cauce Estudios</b><span>Zaragoza</span></span>
+    </a>
+    <a class="btn btn-line" href="#contacto">Hablamos</a>
+  </div>
+</div>
+
+<section id="top">
+  <div class="wrap">
+    <p class="eyebrow">Vídeo cinematográfico para alojamientos</p>
+    <h1>Las fotos que ya tenéis. <em>En movimiento.</em></h1>
+    <p class="lede">Convertimos vuestra fotografía en un vídeo cinematográfico. Sin rodaje, sin visita y sin cerrar la casa un solo día.</p>
+
+    <div class="reproductor">
+      <div class="marco">
+        <video controls preload="none" playsinline poster="portada.jpg">
+          <source src="muestra.mp4" type="video/mp4">
+          Tu navegador no reproduce vídeo. Escríbenos a hola@cauce-estudios.com y te lo mandamos.
+        </video>
+      </div>
+      <div class="pie">
+        <span>Ejemplo real · Hecho solo a partir de fotografías fijas</span>
+        <span>28 segundos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="propuesta">
+  <div class="wrap">
+    <p class="eyebrow">Cómo funciona</p>
+    <h2>Tres pasos, y ninguno os cuesta una tarde.</h2>
+    <p class="intro">No hace falta equipo de rodaje, ni bloquear la propiedad, ni cuadrar agendas con nadie. Lo único que necesitamos son las fotos que ya tenéis hechas.</p>
+
+    <div class="pasos">
+      <div class="paso">
+        <b>01</b>
+        <h3>Nos mandáis las fotos</h3>
+        <p>Las originales, en la máxima resolución que tengáis. No valen capturas del anuncio: de una imagen comprimida no sale nada bueno.</p>
+      </div>
+      <div class="paso">
+        <b>02</b>
+        <h3>Montamos el guion</h3>
+        <p>De diez a doce planos con un recorrido que se entiende: exterior de día, piscina, salón, cocina, dormitorio, baño y cierre al atardecer.</p>
+      </div>
+      <div class="paso">
+        <b>03</b>
+        <h3>Recibís las piezas</h3>
+        <p>El máster horizontal, su versión vertical para redes y el fotograma de portada. Listos para subir.</p>
+      </div>
+    </div>
+
+    <div class="aviso">
+      <p class="eyebrow">Lo que más nos preguntan</p>
+      <h3>No se genera nada que no exista.</h3>
+      <p>Ni una piscina, ni una vista al mar, ni un mueble. Solo movimiento de cámara y luz sobre vuestra fotografía real. <strong>El huésped que llega encuentra exactamente lo que vio</strong>, y esa es justo la parte que os protege: una reseña de una estrella por una expectativa inflada sale mucho más cara que cualquier vídeo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="wrap">
+    <p class="eyebrow">Qué se entrega</p>
+    <h2>Tres piezas por propiedad.</h2>
+    <p class="intro">El vertical se reencuadra plano a plano, no se recorta el horizontal en bloque. Recortar se nota y descoloca todas las composiciones.</p>
+
+    <div class="piezas">
+      <div class="pieza">
+        <span class="fmt">30 s · 16:9</span>
+        <h3>Máster horizontal</h3>
+        <p>Para la web de reserva directa, la ficha de Booking y la pantalla de recepción.</p>
+        <div class="relacion" aria-hidden="true"><i style="width:76px;height:43px"></i></div>
+      </div>
+      <div class="pieza">
+        <span class="fmt">30 s · 9:16</span>
+        <h3>Vertical para redes</h3>
+        <p>Reencuadrado plano a plano para Reels, TikTok y las historias de Instagram.</p>
+        <div class="relacion" aria-hidden="true"><i style="width:29px;height:52px"></i></div>
+      </div>
+      <div class="pieza">
+        <span class="fmt">JPG · 1920×1080</span>
+        <h3>Fotograma de portada</h3>
+        <p>La miniatura, elegida del propio vídeo para que no desentone con él.</p>
+        <div class="relacion" aria-hidden="true"><i style="width:76px;height:43px;background:rgba(237,240,247,.06);border-color:var(--line)"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Dónde se usa</p>
+    <h2>Donde el vídeo os hace ganar dinero.</h2>
+    <p class="intro">Conviene decirlo claro, porque hay una plataforma en la que no sirve de nada y preferimos avisar antes que cobrar por algo que no vais a poder usar.</p>
+
+    <div class="usos">
+      <div class="uso">
+        <h3>Web de reserva directa</h3>
+        <p>Es donde más rinde. Cada reserva que no pasa por la OTA se ahorra la comisión entera.</p>
+      </div>
+      <div class="uso">
+        <h3>Instagram y TikTok</h3>
+        <p>Una foto fija no compite en un feed de vídeo. El vertical va pensado para eso.</p>
+      </div>
+      <div class="uso">
+        <h3>Booking y WhatsApp</h3>
+        <p>El extranet de Booking admite vídeo, y en WhatsApp cierra dudas del cliente que ya pregunta.</p>
+      </div>
+      <div class="uso no">
+        <h3>En Airbnb, no</h3>
+        <p>El anuncio de Airbnb no admite vídeo. Quien os diga lo contrario no lo ha comprobado.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>¿Cuántas fotos hacen falta?</summary>
+        <p>Con quince buenas fotos sale un vídeo sólido. Con menos de diez se nota que el recorrido va justo. Importa más la calidad del archivo original que la cantidad: una foto bien hecha da dos planos, y una captura de pantalla no da ninguno.</p>
+      </details>
+      <details>
+        <summary>¿Y si nuestras fotos son antiguas?</summary>
+        <p>Se corrigen color y resolución antes de animar nada. Ahora bien, si la casa se reformó después de esas fotos, el vídeo enseñará la casa vieja: no inventamos lo que no está fotografiado. En ese caso lo honesto es hacer fotos nuevas primero.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto se tarda?</summary>
+        <p>Trabajamos por lotes, no de una en una. Contad con una semana desde que llegan las fotos hasta la entrega del lote completo.</p>
+      </details>
+      <details>
+        <summary>¿De quién es el vídeo?</summary>
+        <p>Vuestro, sin límite de uso ni de tiempo, en cualquier plataforma. La música va con licencia y os guardamos el justificante por si alguna red os lo reclama.</p>
+      </details>
+      <details>
+        <summary>¿Podemos ver uno con nuestra propia casa antes de decidir?</summary>
+        <p>Sí, y es la forma sensata de decidirlo. Escribidnos, elegimos una de vuestras propiedades y montamos el vídeo con vuestras fotos. Sin coste y sin compromiso: si no os convence, ahí se queda.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="cta-caja">
+      <p class="eyebrow centro">Sin coste y sin compromiso</p>
+      <h2>Vedlo con vuestra propia casa.</h2>
+      <p class="intro">Decidnos qué propiedad y lo montamos con vuestras fotos. Es más fácil valorarlo con vuestro producto delante que con el ejemplo de otro.</p>
+      <div class="acciones">
+        <a class="btn btn-solid" href="mailto:hola@cauce-estudios.com?subject=V%C3%ADdeo%20para%20nuestras%20propiedades">Escribir a Cauce <span aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="https://wa.me/34660396245" target="_blank" rel="noopener">WhatsApp · 660 396 245</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap pie-in">
+    <span>Cauce Estudios · Zaragoza</span>
+    <span>
+      <a href="https://cauce-estudios.com">cauce-estudios.com</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:hola@cauce-estudios.com">hola@cauce-estudios.com</a>
+    </span>
+  </div>
+</footer>
+
+<!-- cauce-contador v2: visita + intencion. Sin cookies ni datos personales:
+     la sesion es un id aleatorio que muere al cerrar la pestana. Para no contarte
+     a ti mismo, ejecuta una vez en la consola: localStorage.setItem('cv-off','1') -->
+<script>
+(function(){try{
+var S=location.pathname.split("/").filter(Boolean)[0]||"raiz";
+var U="https://lgicvvvbockiayeqvokl.supabase.co/rest/v1/";
+var K="sb_publishable_Xw8P_o_nZaNX7E3swa2n-A_m1n6dQ03";
+try{if(localStorage.getItem("cv-off"))return;}catch(e){}
+var SS=sessionStorage.getItem("cs-"+S);
+if(!SS){SS=Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4);sessionStorage.setItem("cs-"+S,SS);}
+var D=(window.matchMedia&&matchMedia("(max-width:767px)").matches)?"movil":"escritorio";
+function P(t,b){try{fetch(U+t,{method:"POST",keepalive:true,headers:{"Content-Type":"application/json","apikey":K,"Prefer":"return=minimal"},body:JSON.stringify(b)}).catch(function(){});}catch(e){}}
+function E(tipo,det,ms){P("eventos_demo",{slug:S,sesion:SS,tipo:tipo,detalle:det||null,ms:ms||null,dispositivo:D});}
+/* 1 · visita */
+if(!sessionStorage.getItem("cv-"+S)){sessionStorage.setItem("cv-"+S,"1");P("visitas_demo",{slug:S});E("visita");}
+/* 2 · secciones vistas, una sola vez cada una */
+var vis={},IDS=["top","propuesta","proyectos","faq","contacto"],pend=IDS.length,tmr;
+function mirar(){var h=window.innerHeight||document.documentElement.clientHeight;
+for(var i=0;i<IDS.length;i++){var id=IDS[i];if(vis[id])continue;
+var el=document.getElementById(id);if(!el)continue;
+var r=el.getBoundingClientRect();
+if(r.top<h*0.6&&r.bottom>h*0.4){vis[id]=1;pend--;E("seccion",id);}}
+if(pend<=0&&tmr){clearInterval(tmr);tmr=0;}}
+window.addEventListener("scroll",mirar,{passive:true,capture:true});
+tmr=setInterval(mirar,1000);mirar();
+/* 3 · clics con intencion */
+document.addEventListener("click",function(e){
+var a=(e.target&&e.target.closest)?e.target.closest("a,button"):null;if(!a)return;
+var h=a.getAttribute("href")||"";
+if(/^tel:/.test(h))E("cta","telefono");
+else if(/^mailto:/.test(h))E("cta","email");
+else if(/wa\.me/.test(h))E("cta","whatsapp");
+else if(/#contacto/.test(h))E("cta","contacto");},true);
+/* 4 · reproduccion del video: la senal que de verdad importa aqui */
+(function(){var v=document.querySelector("video");if(!v)return;
+var play=0,hitos={};
+v.addEventListener("play",function(){if(!play){play=1;E("video","play");}});
+v.addEventListener("timeupdate",function(){
+  if(!v.duration)return;var p=v.currentTime/v.duration;
+  [25,50,75].forEach(function(h){if(!hitos[h]&&p>=h/100){hitos[h]=1;E("video",h+"%");}});});
+v.addEventListener("ended",function(){E("video","completo");});})();
+/* 5 · tiempo visible acumulado */
+var acc=0,d0=Date.now();
+function pausa(){if(d0){acc+=Date.now()-d0;d0=0;}}
+function sigue(){if(!d0)d0=Date.now();}
+function fin(){pausa();if(acc>1500)E("fin",null,Math.min(7200000,acc));}
+document.addEventListener("visibilitychange",function(){document.visibilityState==="hidden"?fin():sigue();});
+window.addEventListener("pagehide",fin);
+}catch(e){}})();
+</script>
+</body>
+</html>
