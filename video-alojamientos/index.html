@@ -166,6 +166,43 @@
   details[open] summary::after{transform:translateY(-25%) rotate(225deg)}
   details p{margin:0 0 24px;max-width:66ch;color:var(--dim);font-size:15.3px}
 
+  /* ---------- calculadora ---------- */
+  .calc{
+    margin-top:clamp(28px,4vw,42px);border:1px solid var(--line-soft);border-radius:12px;
+    background:var(--ink-soft);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;
+  }
+  .calc-in{padding:clamp(22px,3vw,30px);display:flex;flex-direction:column;gap:20px;
+    border-right:1px solid var(--line-soft)}
+  .campo label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--dimmer);margin-bottom:9px}
+  .campo .fila{display:flex;align-items:center;gap:13px}
+  .calc input[type=range]{
+    -webkit-appearance:none;appearance:none;flex:1;height:3px;border-radius:2px;
+    background:rgba(237,240,247,.12);outline:none;
+  }
+  .calc input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;appearance:none;width:15px;height:15px;border-radius:50%;
+    background:var(--signal);cursor:pointer;border:0;
+    box-shadow:0 0 0 4px rgba(var(--rgb-signal),.16);transition:box-shadow .2s;
+  }
+  .calc input[type=range]::-webkit-slider-thumb:hover{box-shadow:0 0 0 7px rgba(var(--rgb-signal),.2)}
+  .calc input[type=range]::-moz-range-thumb{
+    width:15px;height:15px;border-radius:50%;background:var(--signal);cursor:pointer;border:0}
+  .calc input[type=range]::-moz-range-track{height:3px;border-radius:2px;background:rgba(237,240,247,.12)}
+  .valor{font-family:var(--mono);font-size:14px;color:var(--paper);min-width:84px;
+    text-align:right;font-variant-numeric:tabular-nums}
+  .calc-out{padding:clamp(22px,3vw,30px);display:flex;flex-direction:column;
+    justify-content:center;gap:6px}
+  .calc-out .rotulo{font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--dimmer)}
+  .calc-out .grande{font-family:var(--display);font-weight:500;
+    font-size:clamp(30px,4.4vw,44px);letter-spacing:-.035em;line-height:1.05;
+    color:var(--signal);font-variant-numeric:tabular-nums;margin-top:4px}
+  .calc-out .nota{margin-top:14px;font-size:13.5px;color:var(--dim);line-height:1.55;max-width:38ch}
+  .supuestos{grid-column:1/-1;border-top:1px solid var(--line-soft);
+    padding:14px clamp(22px,3vw,30px);font-family:var(--mono);font-size:10px;
+    letter-spacing:.06em;color:var(--dimmer);line-height:1.7}
+
   /* ---------- contacto ---------- */
   #contacto{border-top:1px solid var(--line)}
   .cta-caja{
@@ -189,6 +226,10 @@
   }
   @media (max-width:860px){
     .pasos,.piezas{grid-template-columns:1fr}
+  }
+  @media (max-width:900px){
+    .calc{grid-template-columns:1fr}
+    .calc-in{border-right:0;border-bottom:1px solid var(--line-soft)}
   }
   @media (max-width:620px){
     .usos{grid-template-columns:1fr}
@@ -342,6 +383,55 @@
   </div>
 </section>
 
+<section id="calculadora">
+  <div class="wrap">
+    <p class="eyebrow">La cuenta que importa</p>
+    <h2>Cada reserva directa se ahorra la comisión entera.</h2>
+    <p class="intro">Es la razón de fondo por la que un alojamiento pone vídeo en su propia web. Poned vuestros números y ved cuánto representa en un año.</p>
+
+    <div class="calc">
+      <div class="calc-in">
+        <div class="campo">
+          <label for="c-props">Propiedades en cartera</label>
+          <div class="fila">
+            <input type="range" id="c-props" min="1" max="80" step="1" value="20">
+            <span class="valor" id="cv-props">20</span>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="c-noches">Noches ocupadas al año, por propiedad</label>
+          <div class="fila">
+            <input type="range" id="c-noches" min="30" max="330" step="5" value="180">
+            <span class="valor" id="cv-noches">180</span>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="c-precio">Precio medio por noche</label>
+          <div class="fila">
+            <input type="range" id="c-precio" min="60" max="1200" step="10" value="200">
+            <span class="valor" id="cv-precio">200 &euro;</span>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="c-directo">Reservas que pasan a canal directo</label>
+          <div class="fila">
+            <input type="range" id="c-directo" min="1" max="40" step="1" value="10">
+            <span class="valor" id="cv-directo">10 %</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-out">
+        <span class="rotulo">Comisión ahorrada al año</span>
+        <span class="grande" id="c-ahorro">&mdash;</span>
+        <p class="nota" id="c-contexto">&mdash;</p>
+      </div>
+
+      <p class="supuestos">Comisión de OTA estimada en el 17 %, la habitual en Booking y similares. El cálculo es orientativo y usa únicamente los datos que introducís aquí.</p>
+    </div>
+  </div>
+</section>
+
 <section id="contacto">
   <div class="wrap">
     <div class="cta-caja">
@@ -390,7 +480,7 @@ function E(tipo,det,ms){P("eventos_demo",{slug:S,sesion:SS,tipo:tipo,detalle:det
 /* 1 · visita */
 if(!sessionStorage.getItem("cv-"+S)){sessionStorage.setItem("cv-"+S,"1");P("visitas_demo",{slug:S});E("visita");}
 /* 2 · secciones vistas, una sola vez cada una */
-var vis={},IDS=["top","propuesta","proyectos","faq","contacto"],pend=IDS.length,tmr;
+var vis={},IDS=["top","propuesta","proyectos","faq","calculadora","contacto"],pend=IDS.length,tmr;
 function mirar(){var h=window.innerHeight||document.documentElement.clientHeight;
 for(var i=0;i<IDS.length;i++){var id=IDS[i];if(vis[id])continue;
 var el=document.getElementById(id);if(!el)continue;
@@ -407,7 +497,11 @@ if(/^tel:/.test(h))E("cta","telefono");
 else if(/^mailto:/.test(h))E("cta","email");
 else if(/wa\.me/.test(h))E("cta","whatsapp");
 else if(/#contacto/.test(h))E("cta","contacto");},true);
-/* 4 · reproduccion del video: la senal que de verdad importa aqui */
+/* 4 · uso real de la calculadora: en el scoring vale 20 puntos */
+var uso=0;
+document.addEventListener("input",function(e){if(uso)return;var t=e.target;
+if(t&&(t.type==="range"||(t.closest&&t.closest("#calculadora")))){uso=1;E("calculadora","uso");}},true);
+/* 5 · reproduccion del video: la senal que de verdad importa aqui */
 (function(){var v=document.querySelector("video");if(!v)return;
 var play=0,hitos={};
 v.addEventListener("play",function(){if(!play){play=1;E("video","play");}});
@@ -415,7 +509,7 @@ v.addEventListener("timeupdate",function(){
   if(!v.duration)return;var p=v.currentTime/v.duration;
   [25,50,75].forEach(function(h){if(!hitos[h]&&p>=h/100){hitos[h]=1;E("video",h+"%");}});});
 v.addEventListener("ended",function(){E("video","completo");});})();
-/* 5 · tiempo visible acumulado */
+/* 6 · tiempo visible acumulado */
 var acc=0,d0=Date.now();
 function pausa(){if(d0){acc+=Date.now()-d0;d0=0;}}
 function sigue(){if(!d0)d0=Date.now();}
@@ -423,6 +517,40 @@ function fin(){pausa();if(acc>1500)E("fin",null,Math.min(7200000,acc));}
 document.addEventListener("visibilitychange",function(){document.visibilityState==="hidden"?fin():sigue();});
 window.addEventListener("pagehide",fin);
 }catch(e){}})();
+</script>
+
+
+
+<script>
+(function(){
+  var COMISION = 0.17;
+  var ids = ['c-props','c-noches','c-precio','c-directo'];
+  var el = {}; ids.forEach(function(i){ el[i] = document.getElementById(i); });
+  if (!el['c-props']) return;
+  var out = document.getElementById('c-ahorro');
+  var ctx = document.getElementById('c-contexto');
+  var eur = new Intl.NumberFormat('es-ES',{maximumFractionDigits:0,useGrouping:'always'});
+  var nf0 = new Intl.NumberFormat('es-ES',{maximumFractionDigits:0});
+
+  function pintar(){
+    var p = +el['c-props'].value, n = +el['c-noches'].value,
+        pr = +el['c-precio'].value, d = +el['c-directo'].value;
+    document.getElementById('cv-props').textContent   = nf0.format(p);
+    document.getElementById('cv-noches').textContent  = nf0.format(n);
+    document.getElementById('cv-precio').textContent  = eur.format(pr) + ' \u20ac';
+    document.getElementById('cv-directo').textContent = d + ' %';
+
+    var ahorro = p * n * pr * (d/100) * COMISION;
+    out.textContent = eur.format(Math.round(ahorro)) + ' \u20ac';
+
+    /* Sin precios: la pagina es de presentacion, la tarifa va en la conversacion. */
+    var mes = ahorro / 12;
+    ctx.textContent = 'Son ' + eur.format(Math.round(mes)) +
+      ' \u20ac al mes que hoy se quedan las OTA y que dejar\u00edan de irse con cada reserva que entra por vuestra web.';
+  }
+  ids.forEach(function(i){ el[i].addEventListener('input', pintar); });
+  pintar();
+})();
 </script>
 </body>
 </html>
