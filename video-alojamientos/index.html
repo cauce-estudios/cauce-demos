@@ -50,13 +50,8 @@
     border-bottom:1px solid var(--line-soft);
   }
   .bar-in{max-width:1080px;margin:0 auto;padding:14px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .marca{display:flex;align-items:center;gap:11px;text-decoration:none}
-  .punto{width:9px;height:9px;border-radius:50%;background:var(--signal);flex:none;
-    box-shadow:0 0 0 4px rgba(var(--rgb-signal),.14)}
-  .marca b{display:block;font-family:var(--display);font-weight:500;font-size:16px;
-    letter-spacing:-.025em;color:var(--paper);text-transform:none;white-space:nowrap}
-  .marca .sub{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;
-    text-transform:uppercase;color:var(--dimmer);margin-top:2px}
+  .marca{display:flex;align-items:center;text-decoration:none}
+  .marca img{display:block;height:38px;width:auto}
   .bar .btn{font-size:13px;padding:8px 16px}
 
   /* ---------- botones ---------- */
@@ -209,8 +204,7 @@
 <div class="bar">
   <div class="bar-in">
     <a class="marca" href="https://cauce-estudios.com">
-      <span class="punto" aria-hidden="true"></span>
-      <span><b>Cauce Estudios</b><span class="sub">Zaragoza</span></span>
+      <img src="logo.png" alt="Cauce Estudios">
     </a>
     <a class="btn btn-line" href="#contacto">Hablamos</a>
   </div>
