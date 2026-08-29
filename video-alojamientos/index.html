@@ -53,8 +53,9 @@
   .marca{display:flex;align-items:center;gap:11px;text-decoration:none}
   .punto{width:9px;height:9px;border-radius:50%;background:var(--signal);flex:none;
     box-shadow:0 0 0 4px rgba(var(--rgb-signal),.14)}
-  .marca b{font-family:var(--display);font-weight:500;font-size:15.5px;letter-spacing:-.025em}
-  .marca span{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;
+  .marca b{display:block;font-family:var(--display);font-weight:500;font-size:16px;
+    letter-spacing:-.025em;color:var(--paper);text-transform:none}
+  .marca .sub{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;
     text-transform:uppercase;color:var(--dimmer);margin-top:2px}
   .bar .btn{font-size:13px;padding:8px 16px}
 
@@ -209,7 +210,7 @@
   <div class="bar-in">
     <a class="marca" href="https://cauce-estudios.com">
       <span class="punto" aria-hidden="true"></span>
-      <span><b>Cauce Estudios</b><span>Zaragoza</span></span>
+      <span><b>Cauce Estudios</b><span class="sub">Zaragoza</span></span>
     </a>
     <a class="btn btn-line" href="#contacto">Hablamos</a>
   </div>
@@ -380,6 +381,12 @@
 var S=location.pathname.split("/").filter(Boolean)[0]||"raiz";
 var U="https://lgicvvvbockiayeqvokl.supabase.co/rest/v1/";
 var K="sb_publishable_Xw8P_o_nZaNX7E3swa2n-A_m1n6dQ03";
+/* abrir la pagina con ?yo al final excluye este navegador para siempre */
+if(/[?&]yo\b/.test(location.search)){
+  try{localStorage.setItem("cv-off","1");}catch(e){}
+  alert("Listo: este navegador ya no cuenta visitas.");
+  return;
+}
 try{if(localStorage.getItem("cv-off"))return;}catch(e){}
 var SS=sessionStorage.getItem("cs-"+S);
 if(!SS){SS=Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4);sessionStorage.setItem("cs-"+S,SS);}
