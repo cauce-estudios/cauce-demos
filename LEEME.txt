@@ -1,0 +1,11 @@
+Landing de vídeo para alojamientos · versión con atribución
+
+Es la misma página que ya está publicada, con UN cambio en el contador
+de visitas: si el enlace lleva ?e=nombre-empresa, la visita se guarda
+como «va-nombre-empresa». Así se sabe qué empresa ha entrado.
+
+Sin ese parámetro funciona exactamente igual que ahora.
+
+Cómo subirla: github.com → repositorio de demos → carpeta
+video-alojamientos → Add file → Upload files → arrastra este index.html
+(sustituye al que hay) → Commit.
