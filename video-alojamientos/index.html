@@ -462,7 +462,7 @@
      a ti mismo, ejecuta una vez en la consola: localStorage.setItem('cv-off','1') -->
 <script>
 (function(){try{
-var S=location.pathname.split("/").filter(Boolean)[0]||"raiz";
+var S=location.pathname.split("/").filter(Boolean)[0]||"raiz";try{var Q=new URLSearchParams(location.search).get("e");if(Q&&/^[a-z0-9-]{2,60}$/.test(Q))S="va-"+Q;}catch(e){}
 var U="https://lgicvvvbockiayeqvokl.supabase.co/rest/v1/";
 var K="sb_publishable_Xw8P_o_nZaNX7E3swa2n-A_m1n6dQ03";
 /* abrir la pagina con ?yo al final excluye este navegador para siempre */
